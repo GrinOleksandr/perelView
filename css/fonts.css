@@ -1,0 +1,39 @@
+/* Webfont: NarkisTamMFWRegular */@font-face {
+    font-family: 'NarkisTamMFW';
+    src: url('../fonts/NarkisTamMFW-Regular/NarkisTamMFW-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/NarkisTamMFW-Regular/NarkisTamMFW-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/NarkisTamMFW-Regular/NarkisTamMFW-Regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/NarkisTamMFW-Regular/NarkisTamMFW-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: NarkisTamMFW-Medium */@font-face {
+    font-family: 'NarkisTamMFW';
+    src: url('../fonts/NarkisTam-Medium_MFW/NarkisTam-Medium_MFW.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/NarkisTam-Medium_MFW/NarkisTam-Medium_MFW.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/NarkisTam-Medium_MFW/NarkisTam-Medium_MFW.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/NarkisTam-Medium_MFW/NarkisTam-Medium_MFW.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/NarkisTam-Medium_MFW/NarkisTam-Medium_MFW.svg#NarkisTamMFW-Medium') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: NarkisTamBoldMFW */@font-face {
+    font-family: 'NarkisTamMFW';
+    src: url('../fonts/NarkisTam-Bold_MFW/NarkisTam-Bold_MFW.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/NarkisTam-Bold_MFW/NarkisTam-Bold_MFW.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/NarkisTam-Bold_MFW/NarkisTam-Bold_MFW.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/NarkisTam-Bold_MFW/NarkisTam-Bold_MFW.ttf') format('truetype'); /* Safari, Android, iOS */
+
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
