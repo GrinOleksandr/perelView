@@ -1,3 +1,7 @@
+html {
+    font-size:20px;
+}
+
 body {
     margin:0;
 }
@@ -12,24 +16,19 @@ body {
 /********************HEADER******************/
 
 .header {
-    height: 115px;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    border-bottom:2px solid #eaeaea;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1.8px solid #eaeaea;
+    padding: 0.55rem 1.35rem 0.35rem 2rem;
+
 
 }
+
+
 
 
 .logo1 {
-    width:181px;
-    margin-left: 40px;
-    margin-top: 11px;
-}
-
-.logo2 {
-    width:184px;
-    margin-right: 44px;
-    margin-top: 29px;
+    padding-top: 0.9rem;
 }
 
