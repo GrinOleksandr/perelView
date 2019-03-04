@@ -1,0 +1,34 @@
+body {
+    margin:0;
+}
+
+.main {
+    width: 100%;
+    background-color: #f4f2f2;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+/********************HEADER******************/
+
+.header {
+    height: 115px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    border-bottom:2px solid #eaeaea;
+
+}
+
+.logo1 {
+    width:181px;
+    margin-left: 40px;
+    margin-top: 11px;
+}
+
+.logo2 {
+    width:184px;
+    margin-right: 44px;
+    margin-top: 29px;
+}
+
