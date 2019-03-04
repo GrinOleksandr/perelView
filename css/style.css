@@ -19,16 +19,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1.8px solid #eaeaea;
+    border-bottom: 0.09rem solid #eaeaea;
     padding: 0.55rem 1.35rem 0.35rem 2rem;
-
-
 }
-
-
-
 
 .logo1 {
     padding-top: 0.9rem;
 }
 
+
+/*********************SLIDER*****************/
