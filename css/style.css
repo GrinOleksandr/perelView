@@ -34,6 +34,10 @@ body {
     width:100%;
 }
 
+.slider-wrapper {
+    position:relative;
+}
+
 .hello-text-wrapper {
 
     display:flex;
@@ -64,6 +68,12 @@ body {
     font-weight:700;
 }
 
+
+
+/**/
+
+
+
 .slider {
     width:100%;
     direction: ltr;
@@ -71,14 +81,31 @@ body {
     flex-direction: column;
 }
 
-.slider-item {
-    text-align: center;
+.slider-background-left {
+    position:absolute;
+    z-index:5;
+    left:0;
+}
+.slider-background-right {
+    position:absolute;
+    z-index:5;
 }
 
-.image-wrapper {
-    background: url('../img/slider_left_background.png') left no-repeat,
-    url('../img/slider_right_background.png')  right no-repeat;
-    z-index:2;
+
+
+
+
+
+
+
+
+
+
+
+/**/
+
+.slider-item {
+    text-align: center;
 }
 
 .slide-description {
@@ -99,19 +126,20 @@ button.slick-next, button.slick-next:hover, button.slick-next:active, button.sli
     top: 41%;
     right: 54px;
     width: 24px;
+    z-index: 6;
     height: 52px;
     background-image: url("../img/next_button.png");
-    background-size: 24px;
+    background-size: 25px;
 }
 button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.slick-prev:focus {
     position: absolute;
     top: 41%;
     left: 15px;
-    z-index: 1;
+    z-index: 6;
     width: 24px;
     height: 52px;
     background-image: url("../img/prev_button.png");
-    background-size: 24px;
+    background-size: 25px;
     background-position-x: right;
 }
 .slick-prev:before, .slick-next:before {
