@@ -94,7 +94,7 @@ body {
 /* Slider arrows */
 
 
-button.slick-next, button.slick-next:hover {
+button.slick-next, button.slick-next:hover, button.slick-next:active, button.slick-next:focus {
     position: absolute;
     top: 41%;
     right: 54px;
@@ -103,7 +103,7 @@ button.slick-next, button.slick-next:hover {
     background-image: url("../img/next_button.png");
     background-size: 24px;
 }
-button.slick-prev, button.slick-prev:hover {
+button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.slick-prev:focus {
     position: absolute;
     top: 41%;
     left: 15px;
@@ -123,39 +123,6 @@ button.slick-prev, button.slick-prev:hover {
 
 
 
-
-
-
-
-/*.slick-arrow {*/
-    /*z-index: 9;*/
-/*}*/
-/*.slick-prev {*/
-    /*left: 0;*/
-/*}*/
-/*.slick-next {*/
-    /*right: 0;*/
-/*}*/
-
-/*.slick-prev:before {*/
-    /*!*width:30px;*!*/
-    /*!*content: url('/img/prev_button.png');*!*/
-    /*background-image: url('img/prev_button.png');*/
-    /*background-size: 50px 50px;*/
-    /*display: inline-block;*/
-    /*width: 50px;*/
-    /*height: 50px;*/
-    /*content:"";*/
-
-/*}*/
-
-/*.slick-prev {*/
-    /*background: url('/img/prev_button.png') center no-repeat;*/
-    /*opacity:1;*/
-    /*width: 50px;*/
-    /*height: 50px;*/
-
-/*}*/
 /* END: Slider arrows */
 
 .slick-dots {
