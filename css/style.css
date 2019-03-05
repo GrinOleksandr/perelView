@@ -118,7 +118,7 @@ body {
     direction:rtl;
     position: absolute;
     top: 433px;
-    padding: 9px 0 9px 9px;
+    padding: 9px 0 9px 8px;
 
 }
 
@@ -128,7 +128,8 @@ body {
     direction:rtl;
     font-size:28px;
     font-weight:700;
-    padding:20px 0;
+    padding: 22px 0 23px 15px;
+    font-family: NarkisTamMFW, sans-serif;
 }
 
 
