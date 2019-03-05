@@ -128,10 +128,9 @@ body {
     direction:rtl;
     font-size:28px;
     font-weight:700;
-    padding: 22px 0 23px 15px;
+    padding: 22px 0 11px 15px;
     font-family: NarkisTamMFW, sans-serif;
 }
-
 
 
 /* Slider arrows */
@@ -164,13 +163,17 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     font-weight: bold;
     content:'';
 }
-
-
-
 /* END: Slider arrows */
+/*PAGINATION*/
+
+.slick-dotted.slick-slider {
+    margin:0;
+
+}
 
 .slick-dots {
     position:relative;
+    bottom:0;
 }
 
 .slick-dots li button:before{
