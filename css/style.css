@@ -70,12 +70,15 @@ body {
 }
 
 .slider-item {
-    border: 5px solid #333;
-    background: #ccc;
-    height: 200px;
-    font-size: 72px;
+    background: black;
     text-align: center;
-    line-height: 200px;
 }
 
+.slide-description {
+    color:white;
+}
+
+.slide-promo {
+    color:white;
+}
 
