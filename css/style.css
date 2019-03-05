@@ -43,10 +43,8 @@ body {
 }
 
 .hello-text-wrapper p {
-    /*border: 1px solid black;*/
     width:100%;
     margin:0;
-    background:yellow;
     font-family: NarkisTamMFW, sans-serif;
     font-size: 32px;
     line-height: 37.83px;
@@ -57,7 +55,6 @@ body {
 
 .hello-text {
     max-width:443px;
-    background:blue;
 }
 .hello1{
     font-weight: 300;
@@ -66,4 +63,19 @@ body {
 .hello2 {
     font-weight:700;
 }
+
+.slider {
+    width:100%;
+    direction: ltr;
+}
+
+.slider-item {
+    border: 5px solid #333;
+    background: #ccc;
+    height: 200px;
+    font-size: 72px;
+    text-align: center;
+    line-height: 200px;
+}
+
 
