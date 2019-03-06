@@ -72,7 +72,48 @@
             הכניסו את הפרטים שלכם
             ונציגנו יחזרו אליכם תוך 24 שעות!</div>
     </div>
-
+    <form id="contact-form">
+        <ul class="fields-wrapper">
+        <li>
+            <div class="description">*שם מלא:</div>
+            <input type="text" class="full-name" name="full name" >
+            <div class="alert-full-name">
+                <div>יש להזין אותיות בעברית או באנגלית בלבד</div>
+                <img src="img/attention.png" alt="attention" class="alert">
+            </div>
+        </li>
+        <li>
+            <div class="description">*טלפון:</div>
+            <input type="text" class="phone" name="phone" >
+            <div class="alert-phone">
+                <div>מספר טלפון הוזן באופן שגוי</div>
+                <img src="img/attention.png" alt="attention" class="alert">
+            </div>
+        </li>
+         <li>
+             <div class="description">*כתובת מייל:</div>
+             <input type="text" class="email" name="email" >
+             <div class="alert-email">
+                 <div>מייל הוזן באופן שגוי</div>
+                 <img src="img/attention.png" alt="attention" class="alert">
+             </div>
+         </li>
+            <li>
+                <input type="dropdown" class="apartment-type" name="apartment-type" placeholder="*בחרו סוגר דירה" >
+                <div class="alert-apartment-type">
+                    <div>לא הוזנה סוג דירה</div>
+                    <img src="img/attention.png" alt="attention" class="alert">
+                </div>
+            </li>
+        </ul>
+    </form>
+    <div class="contact-form-footer">
+        <div class="required-fields">*שדות חובה</div>
+        <div class="agreement-wrapper">
+            <div>מסכים/ה לקבל מידע והצעות שיווקיות משיכון ובינוי נדל"ן, לרבות בדוא"ל וה-SMS</div>
+            <input type="checkbox" name="agreement">
+        </div>
+    </div>
 </div>
 
 
