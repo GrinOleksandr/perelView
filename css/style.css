@@ -217,6 +217,7 @@ padding-bottom:50px;
 /************************MODAL**********************/
 .modal{
     width:720px;
+    display:none;
 
 }
 
