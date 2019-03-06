@@ -1,3 +1,7 @@
+.global-temporary-wrapper {
+    width:720px;
+}
+
 html {
     font-size:20px;
 }
@@ -174,34 +178,77 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .slick-dots {
     position:relative;
     bottom:0;
-    padding: 8px 264px 10px 0;
+    padding: 8px 0 103px 288px;
     text-align: unset;
 }
 
 .slick-dots li {
-    float:right;
+    float:left;
+    margin: 0 4px;
 }
 
 
 .slick-dots li button:before{
-    width:17px;
-    height:16px;
+    width: 17px;
+    height: 16px;
     color: #b7b7b7;
-    opacity:1;
+    opacity: 1;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 21px;
     position: absolute;
-    top: -1px;
+    top: 1px;
     left: 2px;
 }
 
 .slick-dots li.slick-active button:before{
     color: #707070;
     font-size: 24px;
-    border: 3px solid #ffffff;
+    /*border: 3px solid #ffffff;*/
     opacity: 1;
 }
 
 .pagination {
 padding-bottom:50px;
+    direction:ltr;
+    display:flex;
+    justify-content:center;
+}
+
+/************************MODAL**********************/
+.modal{
+    width:720px;
+
+}
+
+.overlay {
+    height:100vh;
+    width:100%;
+    background: black;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:12;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.modal-content-wrapper {
+    width:100%;
+    position:absolute;
+    top:300px;
+    left:0;
+    z-index:13;
+}
+
+.close-modal-image {
+
+
+
+}
+
+.modal-image {
+width:100%;
+
 }
