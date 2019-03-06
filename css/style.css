@@ -223,12 +223,11 @@ padding-bottom:50px;
 .overlay {
     height:100vh;
     width:100%;
-    background: black;
+    background: #10151b;
     position:fixed;
     top:0;
     left:0;
     z-index:12;
-
     display:flex;
     justify-content: center;
     /*align-items:center;*/
@@ -237,7 +236,7 @@ padding-bottom:50px;
 .modal-content-wrapper {
     width:100%;
     position:absolute;
-    top: 269px;
+    top: 257px;
     left:0;
     z-index:13;
 }
@@ -246,9 +245,12 @@ padding-bottom:50px;
     position: absolute;
     top: 0;
     left: 32px;
+    cursor:pointer;
 }
 
 .modal-image {
 width:100%;
+    position:absolute;
+    top:68px;
 
 }
