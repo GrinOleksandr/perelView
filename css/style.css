@@ -179,7 +179,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .slick-dots {
     position:relative;
     bottom:0;
-    padding: 8px 0 50px 288px;
+    padding: 8px 0 10px 288px;
     text-align: unset;
 }
 
@@ -209,7 +209,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 }
 
 .pagination {
-padding-bottom:50px;
+    padding-bottom: 22px;
     direction:ltr;
     display:flex;
     justify-content:center;
