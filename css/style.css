@@ -108,8 +108,9 @@ body {
     position:relative;
 }
 
-.slider-item img {
-
+.slider-image{
+    transform-origin: 50% 0 0;
+    transform: scale(1.16, 1.16);
 }
 
 
