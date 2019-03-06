@@ -7,7 +7,7 @@
 
     font-style: normal;
     font-weight: 300;
-    text-rendering: optimizeLegibility;
+    /*text-rendering: optimizeLegibility;*/
 }
 
 /* Webfont: NarkisTamMFW-Medium */@font-face {
@@ -19,7 +19,7 @@
     url('../fonts/NarkisTam-Medium_MFW/NarkisTam-Medium_MFW.svg#NarkisTamMFW-Medium') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: 500;
-    text-rendering: optimizeLegibility;
+    /*text-rendering: optimizeLegibility;*/
 }
 
 /* Webfont: NarkisTamBoldMFW */@font-face {
@@ -31,7 +31,7 @@
 
     font-style: normal;
     font-weight: 700;
-    text-rendering: optimizeLegibility;
+    /*text-rendering: optimizeLegibility;*/
 }
 
 

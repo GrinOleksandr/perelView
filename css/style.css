@@ -108,10 +108,10 @@ body {
     position:relative;
 }
 
-.slider-image{
-    transform-origin: 50% 0 0;
-    transform: scale(1.16, 1.16);
-}
+/*.slider-image{*/
+    /*transform-origin: 50% 0 0;*/
+    /*transform: scale(1.16, 1.16);*/
+/*}*/
 
 
 .slide-description {
@@ -265,19 +265,27 @@ width:100%;
 .contact-form-header {
     background-color: #f50e01;
     color: #ffffff;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.contact-form-header-text-wrapper {
+    max-width:390px;
+    max-height:104px;
 }
 
 .contact-form-header-text1 {
     font-family: NarkisTamMFW, serif;
-    font-size: 31px;
-    font-weight: 500;
+    font-size: 38px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 .contact-form-header-text2 {
     font-family: NarkisTamMFW, serif;
-    font-size: 38px;
-    font-weight: 700;
+    font-size: 31px;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
