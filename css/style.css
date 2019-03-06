@@ -262,9 +262,12 @@ width:100%;
     direction:rtl;
 }
 /*HEADER*/
-.contact-form-header {
+.contact-form-header{
     background-color: #f50e01;
     color: #ffffff;
+}
+
+.contact-form-header-content-wrapper {
     display:flex;
     flex-direction:row;
     justify-content:center;
