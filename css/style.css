@@ -188,23 +188,19 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     height:16px;
     color: #b7b7b7;
     opacity:1;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 23px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -1px;
+    left: 2px;
 }
 
 .slick-dots li.slick-active button:before{
     color: #707070;
-    font-size:15px;
+    font-size: 24px;
     border: 3px solid #ffffff;
     opacity: 1;
 }
-
-
-
-
 
 .pagination {
 padding-bottom:50px;
