@@ -231,21 +231,21 @@ padding-bottom:50px;
 
     display:flex;
     justify-content: center;
-    align-items:center;
+    /*align-items:center;*/
 }
 
 .modal-content-wrapper {
     width:100%;
     position:absolute;
-    top:300px;
+    top: 269px;
     left:0;
     z-index:13;
 }
 
 .close-modal-image {
-
-
-
+    position: absolute;
+    top: 0;
+    left: 32px;
 }
 
 .modal-image {
