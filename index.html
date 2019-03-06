@@ -32,7 +32,9 @@
                 <img class="slider-background-left" src="img/slider_left_background.png">
                     <div class="slider">
                         <div class = "slider-item">
+                            <div>
                             <img class ="slider-image" src="img/houses.png">
+                            </div>
                             <div class="slide-description">ההדמיות נועדו להתרשמות כללית בלבד</div>
                             <div class="slide-promo">מיקום מרכזי על פארק גדול תורם לאיכות חיים למשפחה</div>
                         </div>
@@ -68,11 +70,15 @@
 <div class="contact-form">
     <div class="contact-form-header">
         <img class="contact-form-image" src="img/Background_copy.png">
-        <div class="contact-form-header-text">רוצים להתייעץ חינם?
-            הכניסו את הפרטים שלכם
-            ונציגנו יחזרו אליכם תוך 24 שעות!</div>
+        <div class="contact-form-header-text-wrapper">
+            <div class="contact-form-header-text1">רוצים להתייעץ חינם?</div>
+            <div class="contact-form-header-text2">
+                הכניסו את הפרטים שלכם
+                ונציגנו יחזרו אליכם תוך 24 שעות!
+            </div>
+        </div>
     </div>
-    <form id="contact-form">
+    <form id="contact-form" name="contact-form">
         <ul class="fields-wrapper">
         <li>
             <div class="description">*שם מלא:</div>
@@ -99,7 +105,12 @@
              </div>
          </li>
             <li>
-                <input type="dropdown" class="apartment-type" name="apartment-type" placeholder="*בחרו סוגר דירה" >
+                <select class="apartment-type" name="apartment-type" >
+                    <option >*בחרו סוגר דירה</option>
+                    <option value="test1">TEST OPTION 1</option>
+                    <option value="test2">TEST OPTION 2</option>
+                    <option value="test3">TEST OPTION 3</option>
+                </select>
                 <div class="alert-apartment-type">
                     <div>לא הוזנה סוג דירה</div>
                     <img src="img/attention.png" alt="attention" class="alert">
@@ -111,7 +122,7 @@
         <div class="required-fields">*שדות חובה</div>
         <div class="agreement-wrapper">
             <div>מסכים/ה לקבל מידע והצעות שיווקיות משיכון ובינוי נדל"ן, לרבות בדוא"ל וה-SMS</div>
-            <input type="checkbox" name="agreement">
+            <input type="checkbox" name="agreement" form="contact-form">
         </div>
         <button class="send-details">שלחו פרטים</button>
     </div>

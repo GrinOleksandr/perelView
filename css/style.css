@@ -179,7 +179,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .slick-dots {
     position:relative;
     bottom:0;
-    padding: 8px 0 103px 288px;
+    padding: 8px 0 50px 288px;
     text-align: unset;
 }
 
@@ -254,5 +254,34 @@ padding-bottom:50px;
 width:100%;
     position:absolute;
     top:68px;
-
 }
+
+/*********************CONTACT FORM************************/
+
+.contact-form {
+    direction:rtl;
+}
+/*HEADER*/
+.contact-form-header {
+    background-color: #f50e01;
+    color: #ffffff;
+}
+
+.contact-form-header-text1 {
+    font-family: NarkisTamMFW, serif;
+    font-size: 31px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.contact-form-header-text2 {
+    font-family: NarkisTamMFW, serif;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-form{
+    background: #ff0f03;
+}
+
