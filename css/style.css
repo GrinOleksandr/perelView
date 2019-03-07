@@ -369,6 +369,14 @@ width:100%;
     padding-right: 2px;
 }
 
+.phone-inputs-wrapper {
+    display:flex;
+}
+
+.phone-inputs-wrapper input{
+    border:none;
+}
+
 
 /**************CONTACT FORM FOOTER************************/
 

@@ -18,7 +18,6 @@ function submit(ev){
     console.log(`APARTMENT TYPE: ${Form.elements['apartmentType'].value}`);
     console.log(`SMS AGREEMENT: ${AgreementCheckbox.checked}`);
     console.log("************************************");
-
 }
 
 function validateFullName(){
@@ -29,13 +28,29 @@ function validateFullName(){
        alert.style.display = "none";
        return true;
     }
-    else alert.style.display = "flex";
-    return false;
+    else {
+        alert.style.display = "flex";
+        return false;
+    }
 }
 
-function validateEmail(){
+function validateEmail() {
     let email = EmailInputField.value;
     let sample = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
+    let alert = document.getElementsByClassName("alert-email")[0];
+    if (email && email.match(sample)) {
+        alert.style.display = "none";
+        return true;
+    }
+    else {
+        alert.style.display = "flex";
+        return false;
+    }
+}
+
+function validatePhone(){
+    let email = EmailInputField.value;
+    let sample = 'SAMPLE';
     let alert = document.getElementsByClassName("alert-email")[0];
     if(email && email.match(sample)){
         alert.style.display = "none";
@@ -44,6 +59,8 @@ function validateEmail(){
     }
     else {
         alert.style.display = "flex";
-        console.log(`${email}     NOT OK!`);}
-    return false;
+        console.log(`${email}     NOT OK!`);
+        return false;
+    }
 }
+
