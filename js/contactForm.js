@@ -2,10 +2,12 @@ const Form =document.forms['contactForm'];
 Form.addEventListener('submit', submit);
 
 const FullNameInputField = document.getElementsByClassName("full-name")[0];
-FullNameInputField.addEventListener('keyup', validateFullName);
+FullNameInputField.addEventListener('focusout', validateFullName);
+
+const EmailInputField = document.getElementsByClassName("email")[0];
+EmailInputField.addEventListener('focusout', validateEmail);
 
 const AgreementCheckbox = document.getElementsByClassName("agreement")[0];
-
 
 function submit(ev){
     ev.preventDefault();
@@ -25,10 +27,23 @@ function validateFullName(){
     let alert = document.getElementsByClassName("alert-full-name")[0];
     if(fullName && fullName.match(sample)){
        alert.style.display = "none";
-       console.log(fullName);
        return true;
     }
     else alert.style.display = "flex";
-    console.log(fullName);
+    return false;
+}
+
+function validateEmail(){
+    let email = EmailInputField.value;
+    let sample = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
+    let alert = document.getElementsByClassName("alert-email")[0];
+    if(email && email.match(sample)){
+        alert.style.display = "none";
+        console.log(`${email}     OK`);
+        return true;
+    }
+    else {
+        alert.style.display = "flex";
+        console.log(`${email}     NOT OK!`);}
     return false;
 }
