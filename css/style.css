@@ -319,3 +319,21 @@ width:100%;
     text-transform: uppercase;
 }
 
+.alert {
+    display:flex;
+    color: #ffffff;
+    font-family:NarkisTamMFW, serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.alert div {
+
+}
+
+.alert img {
+    width: 22px;
+    height: 22px;
+}
+
