@@ -287,10 +287,10 @@ width:100%;
     text-transform: uppercase;
 }
 
-.contact-form-header-text2 {
+.contact-form-header-text2,  .contact-form-header-text3{
     font-family: NarkisTamMFW, serif;
-    font-size: 31px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
