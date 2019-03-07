@@ -347,13 +347,15 @@ width:100%;
 }
 
 .alert {
-    display:flex;
+
     color: #ffffff;
     font-family:NarkisTamMFW, serif;
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
     padding-top: 3px;
+    display:none;
+    /*display:flex;*/
 }
 
 .alert div {
