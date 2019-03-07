@@ -294,7 +294,22 @@ width:100%;
     text-transform: uppercase;
 }
 
+/***************************CONTACT FORM CONTENT**************************/
 .contact-form{
     background: #ff0f03;
+}
+
+.fields-wrapper{
+    list-style: none;
+    padding-top: 26px;
+    padding-right: 88px;
+}
+
+.fields-wrapper input{
+
+}
+
+.full-name {
+
 }
 
