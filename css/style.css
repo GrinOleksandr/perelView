@@ -306,10 +306,16 @@ width:100%;
 }
 
 .fields-wrapper input{
-
+    max-width: 537px;
+    width: 100%;
+    height: 70px;
 }
 
-.full-name {
-
+.description {
+    color: #ffffff;
+    font-family: NarkisTamMFW, serif;
+    font-size: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
