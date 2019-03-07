@@ -1,5 +1,7 @@
-let form = document.getElementById('contact-form');
+let form =document.forms['contactForm'];
 form.addEventListener('submit', submit);
+
+let agreementCheckbox = document.getElementsByClassName("agreement")[0];
 
 // let submitBtn = document.getElementsByClassName('send-details')[0];
 // submitBtn.addEventListener('click', submit);
@@ -7,9 +9,15 @@ form.addEventListener('submit', submit);
 function submit(ev){
     console.log('submitted');
     ev.preventDefault();
-    // let data = new FormData(form);
+    console.log("***********FORM SUBMITTED***********");
+    console.log(`FULL NAME: ${form.elements['fullName'].value}`);
+    console.log(`Email: ${form.elements['email'].value}`);
+    console.log(`Phone: ${form.elements['phone'].value}`);
+    console.log(`APARTMENT TYPE: ${form.elements['apartmentType'].value}`);
+    console.log(`SMS AGREEMENT: ${agreementCheckbox.checked}`);
+    console.log("************************************");
 
-    console.log( document.forms['contactForm'].elements['fullName'].value);
+    console.log(form.elements);
 }
 
 // document.forms['form'].elements['fullName'].value
