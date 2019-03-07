@@ -47,7 +47,6 @@ body {
 
     display:flex;
     flex-direction:column;
-    background-color: slateblue;
     padding:31px 122px 28px 0;
 }
 
@@ -334,8 +333,6 @@ width:100%;
     display:none;
 }
 
-
-
 .description {
     color: #ffffff;
     font-family: NarkisTamMFW, serif;
@@ -347,7 +344,6 @@ width:100%;
 }
 
 .alert {
-
     color: #ffffff;
     font-family:NarkisTamMFW, serif;
     font-size: 24px;
@@ -371,12 +367,42 @@ width:100%;
 
 .phone-inputs-wrapper {
     display:flex;
+
+
 }
 
 .phone-inputs-wrapper input{
     border:none;
+    direction: ltr;
 }
 
+input.country-code {
+    width:100px;
+}
+
+input.separator {
+    width: 30px;
+    /*opacity: 0.8;*/
+    color: #4b4b4b;
+    font-family: NarkisTamMFW, serif;
+    font-size: 44px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+input.separator:disabled {
+    background-color: white;
+    color: white;
+}
+
+input.phone{
+    width: 412px;
+}
+
+input.phone:disabled{
+    background:white;
+}
 
 /**************CONTACT FORM FOOTER************************/
 
