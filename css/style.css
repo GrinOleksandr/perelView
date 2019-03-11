@@ -376,6 +376,7 @@ width:100%;
     direction: ltr;
     padding:0;
     outline:none;
+    margin:0;
 }
 
 input.country-code {
