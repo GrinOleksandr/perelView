@@ -478,6 +478,7 @@ input#phone:disabled{
     display: flex;
     flex-direction: row-reverse;
     padding-top: 37px;
+    padding-bottom: 30px;
     position: relative;
 }
 
@@ -497,4 +498,18 @@ input#phone:disabled{
     position: absolute;
     top: 38px;
     right: -4px;
+}
+
+.send-details{
+    width: 540px;
+    height: 71px;
+    border-radius: 15px;
+    background-color: #033766;
+    color: #ffffff;
+    font-family: NarkisTamMFW, serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    border: none;
 }
