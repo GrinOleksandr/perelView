@@ -558,3 +558,29 @@ input#phone:disabled{
 #form-submitted p {
     margin:0;
 }
+
+/**********************************COMMENTS SECTION**********************/
+/******************************HEADER**************************/
+.comments-header {
+    color: #4b4b4b;
+    font-family:NarkisTamMFW, serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 59px;
+    padding-bottom:30px;
+}
+
+.focus-text {
+    color: #ff0f03;
+}
+
+.comments-header div {
+    padding-right: 10px;
+}
+
+/******************************CONTENT**************************/
+
