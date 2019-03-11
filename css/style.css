@@ -455,6 +455,7 @@ input#phone:disabled{
 .contact-form-footer {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 
@@ -474,6 +475,10 @@ input#phone:disabled{
     font-size: 26px;
     font-weight: 400;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 37px;
+    position: relative;
 }
 
 .agreement-wrapper span {
@@ -483,5 +488,13 @@ input#phone:disabled{
 
 .agreement-wrapper div {
     width:100%;
-    max-width:400px;
+    padding-right: 48px;
+}
+
+#agreement {
+    width: 34px;
+    height: 35px;
+    position: absolute;
+    top: 38px;
+    right: -4px;
 }
