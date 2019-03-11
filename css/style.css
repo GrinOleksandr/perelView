@@ -532,10 +532,9 @@ input#phone:disabled{
 /*************Contact form submitted block************************/
 
 #form-submitted {
-
     flex-direction: row;
     justify-content: center;
-    padding: 286px 0 238px 0;
+    padding: 286px 0 377px 0;
     width: 100%;
     background-color: #ff0f03;
     font-family: NarkisTamMFW, serif;
@@ -544,7 +543,7 @@ input#phone:disabled{
     color: #ffffff;
     display: none;
     position: absolute;
-    top: 188px;
+    top: 228px;
     left: 0;
     z-index: 20;
     text-align: center;
@@ -553,5 +552,9 @@ input#phone:disabled{
 .thanks {
     font-size: 112px;
     font-weight: 700;
+    margin:0;
+}
+
+#form-submitted p {
     margin:0;
 }
