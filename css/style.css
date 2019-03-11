@@ -294,14 +294,21 @@ width:100%;
 }
 
 /***************************CONTACT FORM CONTENT**************************/
+.global-contact-wrapper {
+    padding-right: 74px;
+    max-width: 540px;
+}
+
+
 .contact-form{
     background: #ff0f03;
 }
 
 .fields-wrapper{
     list-style: none;
-    padding-top: 6px;
-    padding-right: 74px;
+    padding: 26px 0 0 0;
+
+    margin:0;
 }
 
 .fields-wrapper li{
@@ -445,6 +452,11 @@ input#phone:disabled{
 }
 
 /**************CONTACT FORM FOOTER************************/
+.contact-form-footer {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .required-fields {
     color: #ffffff;
@@ -452,6 +464,8 @@ input#phone:disabled{
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
+    padding: 0;
+    align-self: flex-end;
 }
 
 .agreement-wrapper {
