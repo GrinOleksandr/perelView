@@ -259,6 +259,7 @@ width:100%;
 
 .contact-form {
     direction:rtl;
+    position:relative;
 }
 /*HEADER*/
 .contact-form-header{
@@ -303,6 +304,7 @@ width:100%;
 }
 
 .global-contact-wrapper {
+    position:relative;
     padding-right: 89px;
     max-width: 540px;
 }
@@ -524,4 +526,32 @@ input#phone:disabled{
     text-transform: uppercase;
     padding: 0;
     border: none;
+}
+
+
+/*************Contact form submitted block************************/
+
+#form-submitted {
+
+    flex-direction: row;
+    justify-content: center;
+    padding: 286px 0 238px 0;
+    width: 100%;
+    background-color: #ff0f03;
+    font-family: NarkisTamMFW, serif;
+    font-size: 46px;
+    font-weight: 400;
+    color: #ffffff;
+    display: none;
+    position: absolute;
+    top: 188px;
+    left: 0;
+    z-index: 20;
+    text-align: center;
+}
+
+.thanks {
+    font-size: 112px;
+    font-weight: 700;
+    margin:0;
 }

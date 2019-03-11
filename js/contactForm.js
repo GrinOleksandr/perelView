@@ -99,6 +99,7 @@ function submit(ev) {
         console.log(`APARTMENT TYPE: ${Form.elements['apartmentType'].value}`);
         console.log(`SMS AGREEMENT: ${AgreementCheckbox.checked}`);
         console.log("************************************");
+        document.getElementById("form-submitted").style.display = "flex";
     }
     else console.log("***********DATA VALIDATION FAILED!***********");
 }
