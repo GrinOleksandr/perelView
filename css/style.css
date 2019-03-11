@@ -374,6 +374,8 @@ width:100%;
 .phone-inputs-wrapper input{
     border:none;
     direction: ltr;
+    padding:0;
+    outline:none;
 }
 
 input.country-code {
