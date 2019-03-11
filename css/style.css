@@ -300,12 +300,16 @@ width:100%;
 
 .fields-wrapper{
     list-style: none;
-    padding-top: 8px;
+    padding-top: 6px;
     padding-right: 74px;
 }
 
 .fields-wrapper li{
     padding: 10px 0 33px 0;
+}
+
+.fields-wrapper li:last-child {
+    padding-top: 37px;
 }
 
 .fields-wrapper input, .fields-wrapper select{
@@ -318,16 +322,18 @@ width:100%;
 
 
 .fields-wrapper select{
-
+    padding: 5px 21px 0 0;
+    height: 69px;
     color: #4b4b4b;
     font-family: NarkisTamMFW, serif;
     font-size: 29px;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     background: url(../img/select_arrow.png) no-repeat right #ddd;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-position-x: 27px;
+    background-position-x: 31px;
+    background-position-y: 30px;
     direction: rtl;
 }
 
@@ -370,7 +376,7 @@ width:100%;
 .phone-inputs-wrapper {
     display:flex;
     position: relative;
-    padding-bottom: 62px;
+    padding-bottom: 70px;
 }
 
 .phone-inputs-wrapper input{
