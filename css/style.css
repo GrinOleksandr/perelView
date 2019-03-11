@@ -583,4 +583,16 @@ input#phone:disabled{
 }
 
 /******************************CONTENT**************************/
+ul.comments-content li {
+    display:flex;
+    flex-direction:row;
+}
 
+.user-photo {
+    background:url(../img/avatar.png) no-repeat center;
+    border-radius: 100px;
+    width: 310px;
+    height: 149px;
+    background-position-x: -155px;
+    background-position-y: -45px;
+}
