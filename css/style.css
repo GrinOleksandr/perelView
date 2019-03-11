@@ -598,7 +598,7 @@ ul.comments-content li {
 .user-photo {
     background: url(../img/avatar.png) no-repeat center;
     border-radius: 100px;
-    width: 192px;
+    width: 220px;
     height: 147px;
     background-position-x: -156px;
     background-position-y: -46px;
@@ -606,17 +606,24 @@ ul.comments-content li {
 }
 
 .comment-text-wrapper {
-    width:88%;
+    width: 88%;
     color: #053663;
     font-family: NarkisTamMFW, serif;
     font-size: 26px;
     font-weight: 400;
     text-transform: uppercase;
+    line-height: 31px;
+    padding-left: 96px;
+}
+.author {
+    font-weight:600;
+    font-family: NarkisTamMFW, serif;
+    font-size: 26px;
 
 }
 
 .brackets {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 23px;
+    padding-left: 20px;
 }
 
