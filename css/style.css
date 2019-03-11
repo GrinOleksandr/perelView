@@ -572,7 +572,7 @@ input#phone:disabled{
     flex-direction: row;
     justify-content: center;
     padding-top: 59px;
-    padding-bottom:30px;
+    padding-bottom: 15px;
 }
 
 .focus-text {
@@ -584,22 +584,29 @@ input#phone:disabled{
 }
 
 /******************************CONTENT**************************/
-ul.comments {
-    padding: 0 11%;
+ul.comments-content{
+    padding: 0 82px 0 0;
 }
 
 ul.comments-content li {
-    display:flex;
-    flex-direction:row;
-    align-items:center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: flex-start;
+    padding-top: 71px;
+    padding-bottom: 67px;
+    border-top: 2px solid #80808078;
+}
+
+ul.comments-content li:first-child {
+    border:none;
 }
 
 .user-photo {
     background: url(../img/avatar.png) no-repeat center;
     border-radius: 100px;
-    width: 220px;
-    height: 147px;
+    width: 231px;
+    height: 148px;
     background-position-x: -156px;
     background-position-y: -46px;
     padding-left: 10px;
