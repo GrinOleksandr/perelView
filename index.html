@@ -87,8 +87,8 @@
                 <ul class="fields-wrapper">
                     <li>
                         <div class="description">*שם מלא:</div>
-                        <input type="text" class="full-name" name="fullName" >
-                        <div class="alert-full-name alert">
+                        <input type="text" id="full-name" name="fullName" >
+                        <div id="alert-full-name alert">
                             <img src="img/attention.png" alt="attention">
                             <div>יש להזין אותיות בעברית או באנגלית בלבד</div>
                         </div>
@@ -96,9 +96,9 @@
                     <li>
                         <div class="description">*טלפון:</div>
                         <div class="phone-inputs-wrapper">
-                            <input type="text" class="phone" name="phone" disabled >
+                            <input type="text" class="phone" name="phone" disabled maxlength="7" >
                             <input type="text" class="separator" name="separator" placeholder="-" disabled >
-                            <input type="text" class="country-code" name="countryCode" >
+                            <input type="text" class="country-code" name="countryCode" maxlength="3" >
 
                         </div>
                         <div class="alert-phone alert">

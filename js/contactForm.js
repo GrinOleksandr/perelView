@@ -1,11 +1,11 @@
 //Validate FullName
-const FullNameInputField = document.getElementsByClassName("full-name")[0];
+const FullNameInputField = document.getElementById("full-name");
 FullNameInputField.addEventListener('focusout', validateFullName);
 
 function validateFullName(){
     let fullName = FullNameInputField.value;
     let sample = new RegExp("^[a-zA-Z\u0590-\u05fe '\"-]+$");
-    let alert = document.getElementsByClassName("alert-full-name")[0];
+    let alert = document.getElementById("alert-full-name");
     if(fullName && fullName.match(sample)){
        alert.style.display = "none";
        return true;
@@ -36,25 +36,22 @@ function validateEmail() {
 
 // Validate phone
 const CountryCode = document.getElementsByClassName("country-code")[0];
-CountryCode.addEventListener('keyup', validateCountryCode);
+CountryCode.addEventListener('focusout', validateCountryCode);
 
 const Phone = document.getElementsByClassName("phone")[0];
-Phone.addEventListener('keyup', validatePhone);
+Phone.addEventListener('focusout', validatePhone);
 
 function validateCountryCode(){
     let code = CountryCode.value;
     let sample = /^(02|03|04|06|08|09|072|074|076|077|078|079|050|051|052|053|054|055|056|058|059)$/;
     let alert = document.getElementsByClassName("alert-phone")[0];
     if(code && code.match(sample)){
-        console.log(code.match(sample[1]));
         alert.style.display = "none";
         Phone.disabled = false;
-        console.log(`${code}     OK`);
         return true;
     }
     else {
         alert.style.display = "flex";
-        console.log(`${code}     NOT OK!`);
         return false;
     }
 }
@@ -65,20 +62,29 @@ function validatePhone(){
     let alert = document.getElementsByClassName("alert-phone")[0];
     if(phone && phone.match(sample)){
         alert.style.display = "none";
-        console.log(`${phone}     OK`);
         return true;
     }
     else {
         alert.style.display = "flex";
-        console.log(`${phone}     NOT OK!`);
         return false;
     }
 }
 
+//Validate Apartment-type input
+const ApartmentType = document.getElementsByClassName("apartment-type")[0];
 
-
-
-
+function validateApartment() {
+    // e.options[e.selectedIndex].value
+    let alert = document.getElementsByClassName("alert-apartment-type")[0];
+    if (ApartmentType.selectedIndex && ApartmentType.value ){
+        alert.style.display = "none";
+        return true;
+    }
+    else {
+        alert.style.display = "flex";
+        return false;
+    }
+}
 
 //Handle form submission
 const Form =document.forms['contactForm'];
@@ -88,11 +94,14 @@ const AgreementCheckbox = document.getElementsByClassName("agreement")[0];
 
 function submit(ev){
     ev.preventDefault();
-    console.log("***********FORM SUBMITTED***********");
-    console.log(`FULL NAME: ${Form.elements['fullName'].value}`);
-    console.log(`Email: ${Form.elements['email'].value}`);
-    console.log(`Phone: ${Form.elements['phone'].value}`);
-    console.log(`APARTMENT TYPE: ${Form.elements['apartmentType'].value}`);
-    console.log(`SMS AGREEMENT: ${AgreementCheckbox.checked}`);
-    console.log("************************************");
+    if(validateFullName && validatePhone && validateEmail && validateApartment()) {
+        console.log("***********FORM SUBMITTED***********");
+        console.log(`Full Name: ${Form.elements['fullName'].value}`);
+        console.log(`Email: ${Form.elements['email'].value}`);
+        console.log(`Phone: (${Form.elements['countryCode'].value})${Form.elements['phone'].value}`);
+        console.log(`APARTMENT TYPE: ${Form.elements['apartmentType'].value}`);
+        console.log(`SMS AGREEMENT: ${AgreementCheckbox.checked}`);
+        console.log("************************************");
+    }
+    else console.log("***********DATA VALIDATION FAILED!***********");
 }
