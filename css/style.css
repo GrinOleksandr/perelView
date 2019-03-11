@@ -313,6 +313,7 @@ width:100%;
     width: 100%;
     height: 65px;
     direction:ltr;
+    border:none;
 }
 
 
@@ -367,6 +368,8 @@ width:100%;
 
 .phone-inputs-wrapper {
     display:flex;
+    position: relative;
+    padding-bottom: 62px;
 
 
 }
@@ -380,8 +383,11 @@ width:100%;
 }
 
 input.country-code {
-    width:100px;
-    padding:0;
+    width: 101px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 440px;
 }
 
 input.separator {
@@ -399,12 +405,18 @@ input.separator {
 input.separator:disabled {
     background-color: white;
     color: white;
-    padding:0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 411px;
 }
 
 input.phone{
     width: 412px;
-    padding:0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 input.phone:disabled{
