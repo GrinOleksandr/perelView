@@ -380,7 +380,7 @@ width:100%;
     margin:0;
 }
 
-input.country-code {
+input#country-code {
     width: 101px;
     padding: 0;
     position: absolute;
@@ -414,7 +414,7 @@ input.separator:disabled {
     right: 411px;
 }
 
-input.phone{
+input#phone{
     width: 412px;
     padding: 0;
     position: absolute;
@@ -428,7 +428,7 @@ input.phone{
 
 }
 
-input.phone:disabled{
+input#phone:disabled{
     background:white;
     padding:0;
 }

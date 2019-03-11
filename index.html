@@ -88,7 +88,7 @@
                     <li>
                         <div class="description">*שם מלא:</div>
                         <input type="text" id="full-name" name="fullName" >
-                        <div id="alert-full-name alert">
+                        <div id="alert-full-name" class = "alert">
                             <img src="img/attention.png" alt="attention">
                             <div>יש להזין אותיות בעברית או באנגלית בלבד</div>
                         </div>
@@ -96,32 +96,32 @@
                     <li>
                         <div class="description">*טלפון:</div>
                         <div class="phone-inputs-wrapper">
-                            <input type="text" class="phone" name="phone" disabled maxlength="7" >
+                            <input type="text" id="phone" name="phone" disabled maxlength="7" >
                             <input type="text" class="separator" name="separator" placeholder="-" disabled >
-                            <input type="text" class="country-code" name="countryCode" maxlength="3" >
+                            <input type="text" id="country-code" name="countryCode" maxlength="3" >
 
                         </div>
-                        <div class="alert-phone alert">
+                        <div id="alert-phone" class = "alert">
                             <img src="img/attention.png" alt="attention">
                             <div>מספר טלפון הוזן באופן שגוי</div>
                         </div>
                     </li>
                     <li>
                         <div class="description">*כתובת מייל:</div>
-                        <input type="text" class="email" name="email" >
-                        <div class="alert-email alert">
+                        <input type="text" id="email" name="email" >
+                        <div id="alert-email" class = "alert">
                             <img src="img/attention.png" alt="attention">
                             <div>מייל הוזן באופן שגוי</div>
                         </div>
                     </li>
                     <li>
-                        <select class="apartment-type" name="apartmentType" >
+                        <select id="apartment-type" name="apartmentType" >
                             <option >*בחרו סוגר דירה</option>
                             <option value="test1">TEST OPTION 1</option>
                             <option value="test2">TEST OPTION 2</option>
                             <option value="test3">TEST OPTION 3</option>
                         </select>
-                        <div class="alert-apartment-type alert">
+                        <div id="alert-apartment-type" class = "alert">
                             <img src="img/attention.png" alt="attention" >
                             <div>לא הוזנה סוג דירה</div>
                         </div>
@@ -132,7 +132,7 @@
                 <div class="required-fields">*שדות חובה</div>
                 <div class="agreement-wrapper">
                     <div>מסכים/ה לקבל מידע והצעות שיווקיות משיכון ובינוי נדל"ן, לרבות בדוא"ל וה-<span>SMS</span></div>
-                    <input type="checkbox" class= "agreement" name="agreement" form="contact-form">
+                    <input type="checkbox" id= "agreement" name="agreement" form="contact-form">
                 </div>
                 <button type = "submit" class="send-details" form="contact-form">שלחו פרטים</button>
             </div>
