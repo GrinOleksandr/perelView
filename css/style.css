@@ -294,14 +294,17 @@ width:100%;
 }
 
 /***************************CONTACT FORM CONTENT**************************/
-.global-contact-wrapper {
-    padding-right: 74px;
-    max-width: 540px;
-}
+
 
 
 .contact-form{
     background: #ff0f03;
+    padding-bottom: 52px;
+}
+
+.global-contact-wrapper {
+    padding-right: 89px;
+    max-width: 540px;
 }
 
 .fields-wrapper{
@@ -313,11 +316,17 @@ width:100%;
 
 .fields-wrapper li{
     padding: 10px 0 33px 0;
+    position: relative;
 }
 
 .fields-wrapper li:last-child {
     padding-top: 37px;
 }
+
+#alert-apartment-type {
+    top: 107px;
+}
+
 
 .fields-wrapper input, .fields-wrapper select{
     max-width: 540px;
@@ -336,7 +345,7 @@ width:100%;
     font-size: 29px;
     font-weight: 500;
     text-transform: uppercase;
-    background: url(../img/select_arrow.png) no-repeat right #ddd;
+    background: url(../img/select_arrow.png) no-repeat right #fff;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-position-x: 31px;
@@ -366,6 +375,9 @@ width:100%;
     text-transform: uppercase;
     padding-top: 3px;
     display:none;
+    position: absolute;
+    top: 118px;
+    right: 0;
     /*display:flex;*/
 }
 
@@ -376,7 +388,7 @@ width:100%;
 .alert img {
     width: 22px;
     height: 22px;
-    padding-top: 1px;
+    padding-top: 3px;
     padding-right: 2px;
 }
 
