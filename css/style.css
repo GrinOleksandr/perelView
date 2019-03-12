@@ -1,5 +1,5 @@
 .global-temporary-wrapper {
-    width:720px;
+    width:100%;
 }
 
 html {
@@ -44,12 +44,12 @@ body {
     width:100%;
 }
 
-.hello-text-wrapper {
+/*.hello-text-wrapper {*/
 
-    display:flex;
-    flex-direction:column;
-    padding:31px 122px 28px 0;
-}
+    /*display:flex;*/
+    /*flex-direction:column;*/
+    /*padding:31px 122px 28px 0;*/
+/*}*/
 
 .hello-text-wrapper p {
     width:100%;
@@ -64,6 +64,7 @@ body {
 
 .hello-text {
     max-width:443px;
+    margin:0 auto;
 }
 .hello1{
     font-weight: 300;
@@ -674,8 +675,8 @@ ul.comments-content li:last-child {
 
 .ellipsis {
     position:absolute;
-    top: 71%;
-    right: 35%;
+    top: 86.5%;
+    right: 34.7%;
     width: 16%;
     color: #053663;
     font-family: NarkisTamMFW, serif;
@@ -685,15 +686,17 @@ ul.comments-content li:last-child {
     cursor:pointer;
     display:none;
     padding-left:20px;
-    background:url(../img/close.png) no-repeat right #fff;
-    background-position-x: 6px;
+    background:url(../img/close.png) no-repeat right ;
+    background-position-x: 8px;
     background-position-y: 15px;
 }
 
 .closed {
-    background:url(../img/open.png) no-repeat right #fff;
+    top: 83.5%;
+    right: 34.7%;
+    background:url(../img/open.png) no-repeat right;
     background-position-x: 6px;
-    background-position-y: 15px;
+    background-position-y: 14px;
 }
 
 
