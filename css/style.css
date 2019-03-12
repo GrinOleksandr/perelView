@@ -661,3 +661,17 @@ ul.comments-content li:last-child:after {
     padding-left: 3px;
 }
 
+.comment:after{
+    content:"...";
+    display:var(--display, none);
+}
+
+.ellipsis {
+    color: #053663;
+    font-family: NarkisTamMFW, serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor:pointer;
+    display:none;
+}
