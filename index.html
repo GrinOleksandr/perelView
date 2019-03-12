@@ -81,11 +81,10 @@
             </div>
             <div class="global-contact-wrapper">
                     <form id="contact-form" name="contactForm">
-
                         <ul class="fields-wrapper">
                             <li>
                                 <div class="description">*שם מלא:</div>
-                                <input type="text" id="full-name" name="fullName" >
+                                <input type="text" id="full-name" name="fullName"  maxlength="24">
                                 <div id="alert-full-name" class = "alert">
                                     <img src="img/attention.png" alt="attention">
                                     <div>יש להזין אותיות בעברית או באנגלית בלבד</div>
@@ -106,7 +105,7 @@
                             </li>
                             <li>
                                 <div class="description">*כתובת מייל:</div>
-                                <input type="text" id="email" name="email" >
+                                <input type="text" id="email" name="email"  maxlength="250">
                                 <div id="alert-email" class = "alert">
                                     <img src="img/attention.png" alt="attention">
                                     <div>מייל הוזן באופן שגוי</div>
