@@ -186,6 +186,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .slick-dots li {
     float:left;
     margin: 0 4px;
+    padding-left: 2px;
 }
 
 
