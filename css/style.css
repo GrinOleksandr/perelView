@@ -144,11 +144,11 @@ body {
 button.slick-next, button.slick-next:hover, button.slick-next:active, button.slick-next:focus {
     position: absolute;
     top: 239px;
-    right: 28px;
+    right: 45px;
     width: 25px;
     height: 52px;
     z-index: 6;
-    background-image: url("../img/next_button.png");
+    background-image: url(../img/next_button.png);
     background-size: 25px;
 }
 button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.slick-prev:focus {
