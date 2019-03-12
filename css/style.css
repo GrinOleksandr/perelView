@@ -585,7 +585,7 @@ input#phone:disabled{
 
 /******************************CONTENT**************************/
 ul.comments-content{
-    padding: 6px 72px 0 0;
+    padding: 14px 72px 0 0;
 }
 
 ul.comments-content li {
@@ -593,13 +593,16 @@ ul.comments-content li {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 71px;
-    padding-bottom: 67px;
+    /* padding-top: 71px; */
+    /* padding-bottom: 67px; */
     border-top: 2px solid #80808078;
+    padding: 73px 0 75px 0;
 }
+
 
 ul.comments-content li:first-child {
     border:none;
+    padding-bottom:73px;
 }
 
 .user-photo {
