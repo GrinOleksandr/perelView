@@ -12,7 +12,7 @@ function truncateMe(target){
        console.log(target.parentElement.parentElement.getElementsByClassName("ellipsis")[0]);
        let shortText = text.substr(0,120);
        target.innerText = shortText;
-       target.parentElement.parentElement.style.setProperty("--display", "#flex");
+       target.parentElement.parentElement.style.setProperty("--display", "inline");
        let ellipsis = target.parentElement.parentElement.getElementsByClassName("ellipsis")[0];
        ellipsis.style.display = "flex";
        ellipsis.classList.add("closed");
@@ -29,12 +29,14 @@ function toggleText(target, string, shortString) {
     let myTextBlock = target.parentElement.getElementsByClassName("comment-text")[0];
     if(target.classList.contains("closed")){
         target.classList.remove("closed");
+        target.parentElement.style.setProperty("--display", "none");
         myTextBlock.innerText = string;
     }
 
     else {
         myTextBlock.innerText = shortString;
         target.classList.add("closed");
+        target.parentElement.style.setProperty("--display", "inline");
     }
 }
 
