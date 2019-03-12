@@ -54,6 +54,7 @@ body {
 .hello-text-wrapper p {
     width:100%;
     margin:0;
+    padding: 29px 0 30px;
     font-family: NarkisTamMFW, sans-serif;
     font-size: 32px;
     line-height: 37.83px;
@@ -112,7 +113,7 @@ body {
 img.slider-image{
     display: block;
     width: 100%;
-    max-height: 515px;
+    max-height: 474px;
 }
 
 
@@ -135,7 +136,7 @@ img.slider-image{
     direction:rtl;
     font-size:28px;
     font-weight:700;
-    padding: 22px 0 11px 15px;
+    padding: 22px 0 10px 11px;
     font-family: NarkisTamMFW, sans-serif;
 }
 
