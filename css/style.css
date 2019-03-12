@@ -615,6 +615,10 @@ ul.comments-content li:last-child:after {
     display:none;
 }
 
+ul.comments-content li:last-child {
+    padding-bottom: 27px;
+}
+
 .user-photo {
     background: url(../img/avatar.png) no-repeat center;
     border-radius: 100px;
