@@ -709,3 +709,20 @@ ul.comments-content li:last-child:after {
 .privacy-policy {
     text-decoration:underline;
 }
+
+.call {
+    background:url(../img/call_icon.png) no-repeat right #033766;
+    background-position-x: 544px;
+    background-position-y: 40px;
+    display:flex;
+    justify-content:center;
+    padding: 34px 12px 37px 0;
+}
+
+.call span {
+    color: #ffffff;
+    font-family: NarkisTamMFW, serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
