@@ -689,3 +689,15 @@ ul.comments-content li:last-child:after {
     background-position-x: 6px;
     background-position-y: 15px;
 }
+
+.expiration-wrapper {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    color: #ffffff;
+    font-family: NarkisTamMFW, serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background:#001722;
+}
