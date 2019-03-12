@@ -670,7 +670,7 @@ ul.comments-content li:last-child:after {
     position:absolute;
     top: 71%;
     right: 35%;
-    width: 29%;
+    width: 16%;
     color: #053663;
     font-family: NarkisTamMFW, serif;
     font-size: 26px;
@@ -679,6 +679,12 @@ ul.comments-content li:last-child:after {
     cursor:pointer;
     display:none;
     padding-left:20px;
+    background:url(../img/close.png) no-repeat right #fff;
+    background-position-x: 6px;
+    background-position-y: 15px;
+}
+
+.closed {
     background:url(../img/open.png) no-repeat right #fff;
     background-position-x: 6px;
     background-position-y: 15px;
