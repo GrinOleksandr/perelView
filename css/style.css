@@ -706,20 +706,22 @@ ul.comments-content li:last-child:after {
     text-transform: uppercase;
 }
 
-.privacy-policy {
+.privacy-policy , .privacy-policy:active, .privacy-policy:visited {
     text-decoration:underline;
+    color: #ffffff;
 }
 
-.call {
+#call {
     background:url(../img/call_icon.png) no-repeat right #033766;
     background-position-x: 544px;
     background-position-y: 40px;
     display:flex;
     justify-content:center;
     padding: 34px 12px 37px 0;
+    cursor:pointer;
 }
 
-.call span {
+#call span {
     color: #ffffff;
     font-family: NarkisTamMFW, serif;
     font-size: 30px;
