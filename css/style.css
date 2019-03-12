@@ -401,7 +401,6 @@ width:100%;
 }
 
 .phone-inputs-wrapper input{
-
     border:none;
     direction: ltr;
     padding:0;
@@ -421,6 +420,7 @@ input#country-code {
     font-size: 60px;
     font-weight: 300;
     text-transform: uppercase;
+    text-align:center;
 }
 
 input.separator {
@@ -457,6 +457,7 @@ input#phone{
     font-size: 60px;
     font-weight: 300;
     text-transform: uppercase;
+    text-align:center;
 
 }
 
@@ -589,20 +590,27 @@ ul.comments-content{
 }
 
 ul.comments-content li {
+    position:relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    /* padding-top: 71px; */
-    /* padding-bottom: 67px; */
-    border-top: 2px solid #80808078;
-    padding: 73px 0 75px 0;
+    padding: 72px 0 76px 0;
+}
+
+ul.comments-content li:after {
+    content: "";
+    background: #cccccc;
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    height: 1.5px;
+    width: 97%;
 }
 
 
-ul.comments-content li:first-child {
-    border:none;
-    padding-bottom:73px;
+ul.comments-content li:last-child:after {
+    display:none;
 }
 
 .user-photo {
