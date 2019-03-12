@@ -585,7 +585,7 @@ input#phone:disabled{
 
 /******************************CONTENT**************************/
 ul.comments-content{
-    padding: 0 82px 0 0;
+    padding: 6px 72px 0 0;
 }
 
 ul.comments-content li {
@@ -605,22 +605,28 @@ ul.comments-content li:first-child {
 .user-photo {
     background: url(../img/avatar.png) no-repeat center;
     border-radius: 100px;
-    width: 231px;
+    width: 237px;
     height: 148px;
-    background-position-x: -156px;
-    background-position-y: -46px;
-    padding-left: 10px;
+    background-position-x: -154px;
+    background-position-y: -45px;
+    padding-left: 2px;
+
 }
 
+.user-photo-padder {
+    padding:0 4px;
+
+
+}
 .comment-text-wrapper {
-    width: 88%;
+    width: 87%;
     color: #053663;
     font-family: NarkisTamMFW, serif;
     font-size: 26px;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 31px;
-    padding-left: 96px;
+    padding-left: 74px;
 }
 .author {
     font-weight:600;
@@ -630,7 +636,17 @@ ul.comments-content li:first-child {
 }
 
 .brackets {
-    padding-right: 23px;
+    padding-right: 21px;
     padding-left: 20px;
+}
+
+.comment-footer {
+    float: left;
+    padding-left: 21%;
+    line-height: 25px;
+}
+
+.comment-footer-separator {
+    padding-left: 1px;
 }
 
