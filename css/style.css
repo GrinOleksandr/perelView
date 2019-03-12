@@ -653,11 +653,11 @@ ul.comments-content li:last-child:after {
 
 .comment-footer {
     float: left;
-    padding-left: 21%;
-    line-height: 25px;
+    padding-left: 22%;
+    line-height: 26px;
 }
 
 .comment-footer-separator {
-    padding-left: 1px;
+    padding-left: 3px;
 }
 
