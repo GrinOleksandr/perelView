@@ -227,7 +227,6 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .modal{
     width:720px;
     display:none;
-
 }
 
 .overlay {
@@ -258,7 +257,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 }
 
 .modal-image {
-width:100%;
+    width:100%;
     position:absolute;
     top:68px;
 }
@@ -594,14 +593,26 @@ input#phone:disabled{
 
 /******************************CONTENT**************************/
 ul.comments-content{
-    padding: 14px 72px 0 0;
+    display: flex;
+    flex-wrap:wrap;
+    padding: 14px 0 0 0;
+    list-style:none;
+    margin:0 auto;
 }
 
 ul.comments-content li {
-    position:relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    max-width: 668px;
+    padding:0 72px 0 0;
+}
+
+.comment-wrapper {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px ;
     justify-content: flex-start;
     padding: 72px 0 76px 0;
 }
