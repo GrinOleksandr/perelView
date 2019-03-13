@@ -6,7 +6,7 @@ function onClick(ev){
     let bgLeft = document.getElementsByClassName("slider-background-left")[0];
     let bgRight = document.getElementsByClassName("slider-background-right")[0];
     ev.stopPropagation();
-    console.log(ev.target);
+
 
     if(ev.target === bgRight ||
         ev.target === bgLeft ||

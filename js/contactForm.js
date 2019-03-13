@@ -1,6 +1,6 @@
 //Validate FullName
 const FullNameInputField = document.getElementById("full-name");
-FullNameInputField.addEventListener('focusout', validateFullName);
+FullNameInputField.addEventListener('keypress', validateFullName);
 
 function validateFullName() {
     let fullName = FullNameInputField.value;
@@ -17,7 +17,7 @@ function validateFullName() {
 
 //Validate Email
 const EmailInputField = document.getElementById("email");
-EmailInputField.addEventListener('focusout', validateEmail);
+EmailInputField.addEventListener('keypress', validateEmail);
 
 function validateEmail() {
     let email = EmailInputField.value;
@@ -35,10 +35,11 @@ function validateEmail() {
 // Validate phone
 const CountryCode = document.getElementById("country-code");
 CountryCode.addEventListener('focusout', validateCountryCode);
-CountryCode.addEventListener('keyup', validateCountryCode);
+CountryCode.addEventListener('keypress', validateCountryCode);
 
 const Phone = document.getElementById("phone");
-Phone.addEventListener('keyup', validateCountryCode);
+Phone.addEventListener('keypress', validateCountryCode);
+Phone.addEventListener('keypress', validatePhone);
 Phone.addEventListener('focusout', validatePhone);
 
 function validateCountryCode() {
@@ -91,7 +92,8 @@ const AgreementCheckbox = document.getElementById("agreement");
 
 function submit(ev) {
     ev.preventDefault();
-    if (validateFullName && validatePhone && validateEmail && validateApartment()) {
+        if (validateFullName && validatePhone && validateEmail && validateApartment()) {
+        alert("FORM IS SENT");
         console.log("***********FORM SUBMITTED***********");
         console.log(`Full Name: ${Form.elements['fullName'].value}`);
         console.log(`Email: ${Form.elements['email'].value}`);
