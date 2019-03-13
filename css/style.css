@@ -127,7 +127,6 @@ img.slider-image{
     position: absolute;
     top: 433px;
     padding: 9px 0 9px 8px;
-
 }
 
 .slide-promo {
@@ -142,8 +141,6 @@ img.slider-image{
 
 
 /* Slider arrows */
-
-
 button.slick-next, button.slick-next:hover, button.slick-next:active, button.slick-next:focus {
     position: absolute;
     top: 239px;
@@ -154,6 +151,7 @@ button.slick-next, button.slick-next:hover, button.slick-next:active, button.sli
     background-image: url(../img/next_button.png);
     background-size: 25px;
 }
+
 button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.slick-prev:focus {
     position: absolute;
     top: 239px;
@@ -165,18 +163,19 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     background-size: 25px;
     background-position-x: right;
 }
+
 .slick-prev:before, .slick-next:before {
     color: #EA8496;
     line-height: inherit;
     font-weight: bold;
     content:'';
 }
+
 /* END: Slider arrows */
 /*PAGINATION*/
 
 .slick-dotted.slick-slider {
     margin:0;
-
 }
 
 .slick-dots {
@@ -191,7 +190,6 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     margin: 0 4px;
     padding-left: 2px;
 }
-
 
 .slick-dots li button:before{
     width: 17px;
@@ -236,7 +234,6 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     z-index:12;
     display:flex;
     justify-content: center;
-    /*align-items:center;*/
 }
 
 .modal-content-wrapper {
@@ -300,8 +297,6 @@ width:100%;
 }
 
 /***************************CONTACT FORM CONTENT**************************/
-
-
 
 .contact-form{
     background: #ff0f03;
@@ -371,7 +366,6 @@ width:100%;
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 4px;
-
 }
 
 .alert {
@@ -385,7 +379,6 @@ width:100%;
     position: absolute;
     top: 118px;
     right: 0;
-    /*display:flex;*/
 }
 
 .alert div {
@@ -463,7 +456,6 @@ input#phone{
     font-weight: 300;
     text-transform: uppercase;
     text-align:center;
-
 }
 
 input#phone:disabled{
@@ -630,7 +622,6 @@ ul.comments-content li:last-child {
     background-position-x: -154px;
     background-position-y: -45px;
     padding-left: 2px;
-
 }
 
 .user-photo-padder {
