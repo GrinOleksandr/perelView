@@ -670,14 +670,19 @@ ul.comments-content li:last-child {
 }
 
 .brackets {
-    padding-right: 21px;
-    padding-left: 20px;
+    width: 23px;
+    height: 23px;
+    padding: 64px 21px 0 20px;
 }
 
 .comment-footer {
     float: left;
     padding-left: 22%;
     line-height: 26px;
+}
+
+.comment-footer-expanded {
+    padding-left: 13%;
 }
 
 .comment-footer-separator {
