@@ -624,9 +624,6 @@ ul.comments-content li:last-child {
     padding-left: 0.2rem;
 }
 
-.user-photo-padder {
-    padding:0 0.4rem;
-}
 .comment-text-wrapper {
     width: 87%;
     color: #053663;
