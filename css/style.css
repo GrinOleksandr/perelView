@@ -1,7 +1,3 @@
-.global-temporary-wrapper {
-    width:100%;
-}
-
 html {
     font-size:20px;
 }
@@ -588,6 +584,7 @@ ul.comments-content li {
     max-width: 668px;
     padding: 0 72px 0 0;
     margin: 0 auto;
+    position: relative;
 }
 
 .comment-wrapper {
