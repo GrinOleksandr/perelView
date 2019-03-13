@@ -54,7 +54,6 @@ body {
 .hello-text-wrapper p {
     width:100%;
     margin:0;
-    padding: 29px 0 30px;
     font-family: NarkisTamMFW, sans-serif;
     font-size: 32px;
     line-height: 37.83px;
@@ -66,6 +65,7 @@ body {
 .hello-text {
     max-width:443px;
     margin:0 auto;
+    padding: 27px 0 31px;
 }
 .hello1{
     font-weight: 300;
@@ -125,7 +125,7 @@ img.slider-image{
     font-weight:700;
     direction:rtl;
     position: absolute;
-    top: 433px;
+    top: 432px;
     padding: 9px 0 9px 8px;
 }
 
@@ -181,7 +181,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .slick-dots {
     position:relative;
     bottom:0;
-    padding: 8px 0 10px 288px;
+
     text-align: unset;
 }
 
@@ -208,6 +208,12 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     font-size: 24px;
     /*border: 3px solid #ffffff;*/
     opacity: 1;
+}
+
+.pagination-wrapper {
+    width:100%;
+    display:flex;
+    justify-content:center;
 }
 
 .pagination {
