@@ -217,7 +217,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 }
 
 .pagination {
-    padding-bottom: 22px;
+    padding: 11px 0 31px 5px;
     direction:ltr;
     display:flex;
     justify-content:center;
@@ -309,10 +309,14 @@ width:100%;
     padding-bottom: 52px;
 }
 
+#contact-form{
+    margin: 0 auto;
+    width: 540px;
+}
+
 .global-contact-wrapper {
-    position:relative;
-    padding-right: 89px;
-    max-width: 540px;
+    display: flex;
+    flex-direction: column;
 }
 
 .fields-wrapper{
@@ -473,7 +477,8 @@ input#phone:disabled{
 .contact-form-footer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    max-width: 540px;
+    margin: 0 auto;
 }
 
 
