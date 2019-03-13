@@ -32,26 +32,31 @@ function validateEmail() {
     }
 }
 
-// Validate phone
-const CountryCode = document.getElementById("country-code");
-CountryCode.addEventListener('focusout', validateCountryCode);
-CountryCode.addEventListener('keypress', validateCountryCode);
-
+// Validate phone&country code
 const Phone = document.getElementById("phone");
 Phone.addEventListener('keypress', validateCountryCode);
 Phone.addEventListener('keypress', validatePhone);
-Phone.addEventListener('focusout', validatePhone);
+
+const CountryCode = document.getElementById("country-code");
+CountryCode.addEventListener('keypress', validateCountryCode);
+CountryCode.addEventListener('focusout', function(){
+    if(validateCountryCode()){
+        Phone.focus();
+    }
+});
 
 function validateCountryCode() {
     let code = CountryCode.value;
     let sample = /^(02|03|04|06|08|09|072|074|076|077|078|079|050|051|052|053|054|055|056|058|059)$/;
     let alert = document.getElementById("alert-phone");
-    if (code && code.match(sample)) {
+     if (code && code.match(sample)) {
         Phone.disabled = false;
+        alert.style.display = "none";
         return true;
     } else {
-        Phone.value = "";
+        // Phone.value = "";
         Phone.disabled = true;
+        alert.style.display = "flex";
         return false;
     }
 }
@@ -73,7 +78,6 @@ function validatePhone() {
 const ApartmentType = document.getElementById("apartment-type");
 
 function validateApartment() {
-    // e.options[e.selectedIndex].value
     let alert = document.getElementById("alert-apartment-type");
     if (ApartmentType.selectedIndex && ApartmentType.value) {
         alert.style.display = "none";

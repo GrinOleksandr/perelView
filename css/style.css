@@ -407,7 +407,16 @@ input#country-code {
     font-weight: 300;
     text-transform: uppercase;
     text-align:center;
+    -moz-appearance: textfield;
+
 }
+
+input#country-code::-webkit-inner-spin-button, input#country-code::-webkit-outer-spin-button {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 input.separator {
     height: 7rem;
