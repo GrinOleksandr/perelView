@@ -1,3 +1,5 @@
+@med
+
 html {
     font-size:10px;
 }
@@ -263,8 +265,8 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 }
 
 .contact-form-header-text-wrapper {
-    max-width:390px;
-    max-height:104px;
+    max-width:39rem;
+    max-height:10.4rem;
     padding: 3.4rem 0 0 0.6rem;
 }
 
@@ -721,7 +723,7 @@ ul.comments-content li:last-child {
 }
 
 #call {
-    background:url(../img/call_icon.png) no-repeat right #033766;
+    background: #033766;
     background-position-x: 54.4rem;
     background-position-y: 4rem;
     display:flex;
