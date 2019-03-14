@@ -1,46 +1,6 @@
 html {
-    font-size:10px;
+    font-size:20px;
 }
-
-@media screen and (max-width: 1100px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-
-@media screen and (max-width: 900px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    html {
-        font-size: 9px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    html {
-        font-size: 7px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    html {
-        font-size: 5px;
-    }
-}
-
-@media screen and (max-width: 280px) {
-    html {
-        font-size: 3px;
-    }
-}
-
-
-
 
 body {
     margin:0;
@@ -59,22 +19,15 @@ body {
     flex-direction: row;
     justify-content: space-between;
     background-color: #f4f2f2;
-    border-bottom: 0.18rem solid #eaeaea;
-    padding: 1.1rem 2.70rem 0.7rem 4rem;
+    border-bottom: 0.09rem solid #eaeaea;
+    padding: 0.55rem 1.35rem 0.35rem 2rem;
 }
 
 .logo1 {
-    padding-top: 1.8rem;
-    padding-right: 1.7rem;
+    padding-top: 0.9rem;
+    padding-right: 17px;
 }
 
-.logo1 img{
-    width: 18.0rem;
-}
-
-.logo2 img {
-    width: 18.8rem;
-}
 
 /*************************************SLIDER*************************************/
 
@@ -85,24 +38,23 @@ body {
 .slider-wrapper {
     position:relative;
     width:100%;
-    height:100%;
 }
 
 .hello-text-wrapper p {
     width:100%;
     margin:0;
     font-family: NarkisTamMFW, sans-serif;
-    font-size: 3.2rem;
-    line-height: 3.783rem;
+    font-size: 32px;
+    line-height: 37.83px;
     text-transform: uppercase;
     text-align: center;
     color: #033766;
 }
 
 .hello-text {
-    max-width:44.3rem;
+    max-width:443px;
     margin:0 auto;
-    padding: 2.8rem 0 3.1rem;
+    padding: 27px 0 31px;
 }
 .hello1{
     font-weight: 300;
@@ -121,18 +73,15 @@ body {
 
 /*SHADOWS FOREGROUND*/
 .slider-image-wrapper {
-    width:100%;
-    height:100%;
+    width:100%
 }
 
 .slider-background-left {
-    height: 88%;
     position:absolute;
     z-index:5;
     left:0;
 }
 .slider-background-right {
-    height: 88%;
     position:absolute;
     z-index:5;
 }
@@ -145,34 +94,29 @@ body {
 img.slider-image{
     display: block;
     width: 100%;
-    max-height: 47.4rem;
-}
-
-.slider-item-description {
-    position:relative;
+    max-height: 474px;
 }
 
 
 .slide-description {
-    height: 2.3rem;
     width:100%;
     color:white;
     background-color:black;
-    font-size:2.2rem;
+    font-size:22px;
     font-weight:700;
     direction:rtl;
     position: absolute;
-    bottom: 0;
-    padding: 0.9rem 0 0.9rem 0.8rem;
+    top: 432px;
+    padding: 9px 0 9px 8px;
 }
 
 .slide-promo {
     color:black;
     background-color: white;
     direction:rtl;
-    font-size:2.8rem;
+    font-size:28px;
     font-weight:700;
-    padding: 2.2rem 0 1rem 1.1rem;
+    padding: 22px 0 10px 11px;
     font-family: NarkisTamMFW, sans-serif;
 }
 
@@ -180,24 +124,24 @@ img.slider-image{
 /* Slider arrows */
 button.slick-next, button.slick-next:hover, button.slick-next:active, button.slick-next:focus {
     position: absolute;
-    top: 23.9rem;
-    right: 4.5rem;
-    width: 2.5rem;
-    height: 5.2rem;
+    top: 239px;
+    right: 45px;
+    width: 25px;
+    height: 52px;
     z-index: 6;
     background-image: url(../img/next_button.png);
-    background-size: 2.5rem;
+    background-size: 25px;
 }
 
 button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.slick-prev:focus {
     position: absolute;
-    top: 23.9rem;
-    left: 4.6rem;
+    top: 239px;
+    left: 46px;
     z-index: 6;
-    width: 2.4rem;
-    height: 5.2rem;
+    width: 24px;
+    height: 52px;
     background-image: url("../img/prev_button.png");
-    background-size: 2.5rem;
+    background-size: 25px;
     background-position-x: right;
 }
 
@@ -224,24 +168,26 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 
 .slick-dots li {
     float:left;
-    margin: 0 0.4rem;
-    padding-left: 0.2rem;
+    margin: 0 4px;
+    padding-left: 2px;
 }
 
 .slick-dots li button:before{
-    width: 1.7rem;
-    height: 1.6rem;
+    width: 17px;
+    height: 16px;
     color: #b7b7b7;
     opacity: 1;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
+    font-size: 18px;
+    line-height: 21px;
     position: absolute;
-    top: 0.1rem;
-    left: 0.2rem;
+    top: 1px;
+    left: 2px;
 }
 
 .slick-dots li.slick-active button:before{
     color: #707070;
+    font-size: 24px;
+    /*border: 3px solid #ffffff;*/
     opacity: 1;
 }
 
@@ -252,7 +198,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 }
 
 .pagination {
-    padding: 1.1rem 0 3.1rem 0.5rem;
+    padding: 11px 0 31px 5px;
     direction:ltr;
     display:flex;
     justify-content:center;
@@ -260,7 +206,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 
 /************************MODAL**********************/
 .modal{
-    width:72rem;
+    width:720px;
     display:none;
 }
 
@@ -279,7 +225,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .modal-content-wrapper {
     width:100%;
     position:absolute;
-    top: 25.7rem;
+    top: 257px;
     left:0;
     z-index:13;
 }
@@ -287,14 +233,14 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .close-modal-image {
     position: absolute;
     top: 0;
-    left: 3.2rem;
+    left: 32px;
     cursor:pointer;
 }
 
 .modal-image {
     width:100%;
     position:absolute;
-    top:6.8rem;
+    top:68px;
 }
 
 /*********************CONTACT FORM************************/
@@ -309,34 +255,29 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     color: #ffffff;
 }
 
-.contact-form img{
-    height: 21.4rem;
-    width: 25.2rem;
-}
-
 .contact-form-header-content-wrapper {
     display:flex;
     flex-direction:row;
     justify-content:center;
-    padding: 1.5rem 0 0 0;
+    padding: 19px 0 0 0;
 }
 
 .contact-form-header-text-wrapper {
-    max-width:39.0rem;
-    max-height:10.4rem;
-    padding: 3.4rem 0 0 0.6rem;
+    max-width:390px;
+    max-height:104px;
+    padding: 34px 0 0 6px;
 }
 
 .contact-form-header-text1 {
     font-family: NarkisTamMFW, serif;
-    font-size: 3.8rem;
+    font-size: 38px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .contact-form-header-text2,  .contact-form-header-text3{
     font-family: NarkisTamMFW, serif;
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -345,12 +286,12 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 
 .contact-form{
     background: #ff0f03;
-    padding-bottom: 5.2rem;
+    padding-bottom: 52px;
 }
 
 #contact-form{
     margin: 0 auto;
-    width: 54rem;
+    width: 540px;
 }
 
 .global-contact-wrapper {
@@ -360,45 +301,45 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 
 .fields-wrapper{
     list-style: none;
-    padding: 2.6rem 0 0 0;
+    padding: 26px 0 0 0;
 
     margin:0;
 }
 
 .fields-wrapper li{
-    padding: 1rem 0 3.3rem 0;
+    padding: 10px 0 33px 0;
     position: relative;
 }
 
 .fields-wrapper li:last-child {
-    padding-top: 3.7rem;
+    padding-top: 37px;
 }
 
 #alert-apartment-type {
-    top: 10.7rem;
+    top: 107px;
 }
 
 .fields-wrapper input, .fields-wrapper select{
-    max-width: 54rem;
+    max-width: 540px;
     width: 100%;
-    height: 6.8rem;
+    height: 68px;
     direction: ltr;
     border: none;
 }
 
 .fields-wrapper select{
-    padding: 0.5rem 2.1rem 0 0;
-    height: 6.9rem;
+    padding: 5px 21px 0 0;
+    height: 69px;
     color: #4b4b4b;
     font-family: NarkisTamMFW, serif;
-    font-size: 2.9rem;
+    font-size: 29px;
     font-weight: 500;
     text-transform: uppercase;
     background: url(../img/select_arrow.png) no-repeat right #fff;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-position-x: 3.1rem;
-    background-position-y: 3.0rem;
+    background-position-x: 31px;
+    background-position-y: 30px;
     direction: rtl;
 }
 
@@ -409,40 +350,40 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .description {
     color: #ffffff;
     font-family: NarkisTamMFW, serif;
-    font-size: 2.9rem;
+    font-size: 29px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 0.4rem;
+    padding-bottom: 4px;
 }
 
 .alert {
     color: #ffffff;
     font-family:NarkisTamMFW, serif;
-    font-size: 2.4rem;
+    font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
-    padding-top: 0.3rem;
+    padding-top: 3px;
     display:none;
     position: absolute;
-    top: 11.8rem;
+    top: 118px;
     right: 0;
 }
 
 .alert div {
-    padding-right: 0.9rem;
+    padding-right: 9px;
 }
 
 .alert img {
-    width: 2.2rem;
-    height: 2.2rem;
-    padding-top: 0.3rem;
-    padding-right: 0.2rem;
+    width: 22px;
+    height: 22px;
+    padding-top: 3px;
+    padding-right: 2px;
 }
 
 .phone-inputs-wrapper {
     display:flex;
     position: relative;
-    padding-bottom: 7rem;
+    padding-bottom: 70px;
 }
 
 .phone-inputs-wrapper input{
@@ -454,35 +395,26 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 }
 
 input#country-code {
-    width: 10.1rem;
-    height: 7rem;
+    width: 101px;
+    height: 70px;
     padding: 0;
     position: absolute;
     top: 0;
-    right: 44rem;
+    right: 440px;
     color: #4b4b4b;
     font-family: NarkisTamMFW, serif;
-    font-size: 6rem;
+    font-size: 60px;
     font-weight: 300;
     text-transform: uppercase;
     text-align:center;
-    -moz-appearance: textfield;
-
 }
-
-input#country-code::-webkit-inner-spin-button, input#country-code::-webkit-outer-spin-button {
-    -moz-appearance: textfield;
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 
 input.separator {
-    height: 7rem;
-    width: 3rem;
+    height: 70px;
+    width: 30px;
     color: #4b4b4b;
     font-family: NarkisTamMFW, serif;
-    font-size: 4.4rem;
+    font-size: 44px;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
@@ -495,19 +427,19 @@ input.separator:disabled {
     padding: 0;
     position: absolute;
     top: 0;
-    right: 41.1rem;
+    right: 411px;
 }
 
 input#phone{
-    height: 7rem;
-    width: 41.2rem;
+    height: 70px;
+    width: 412px;
     padding: 0;
     position: absolute;
     top: 0;
     right: 0;
     color: #4b4b4b;
     font-family: NarkisTamMFW, serif;
-    font-size: 6rem;
+    font-size: 60px;
     font-weight: 300;
     text-transform: uppercase;
     text-align:center;
@@ -522,14 +454,14 @@ input#phone:disabled{
 .contact-form-footer {
     display: flex;
     flex-direction: column;
-    max-width: 54rem;
+    max-width: 540px;
     margin: 0 auto;
 }
 
 .required-fields {
     color: #ffffff;
     font-family: NarkisTamMFW, serif;
-    font-size: 2.4rem;
+    font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
     padding: 0;
@@ -539,13 +471,13 @@ input#phone:disabled{
 .agreement-wrapper {
     color: #ffffff;
     font-family: NarkisTamMFW, serif;
-    font-size: 2.6rem;
+    font-size: 26px;
     font-weight: 400;
     text-transform: uppercase;
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 3.7rem;
-    padding-bottom: 3.0rem;
+    padding-top: 37px;
+    padding-bottom: 30px;
     position: relative;
 }
 
@@ -556,26 +488,26 @@ input#phone:disabled{
 
 .agreement-wrapper div {
     width:100%;
-    padding-right: 4.8rem;
+    padding-right: 48px;
 }
 
 #agreement {
-    width: 3.4rem;
-    height: 3.5rem;
+    width: 34px;
+    height: 35px;
     position: absolute;
-    top: 3.8rem;
-    right: -0.4rem;
+    top: 38px;
+    right: -4px;
     background:#fff
 }
 
 .send-details{
-    width: 54rem;
-    height: 7.1rem;
-    border-radius: 1.5rem;
+    width: 540px;
+    height: 71px;
+    border-radius: 15px;
     background-color: #033766;
     color: #ffffff;
     font-family: NarkisTamMFW, serif;
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     padding: 0;
@@ -588,23 +520,23 @@ input#phone:disabled{
 #form-submitted {
     flex-direction: row;
     justify-content: center;
-    padding: 28.6rem 0 37.7rem 0;
+    padding: 286px 0 377px 0;
     width: 100%;
     background-color: #ff0f03;
     font-family: NarkisTamMFW, serif;
-    font-size: 4.6rem;
+    font-size: 46px;
     font-weight: 400;
     color: #ffffff;
     display: none;
     position: absolute;
-    top: 22.8rem;
+    top: 228px;
     left: 0;
     z-index: 20;
     text-align: center;
 }
 
 .thanks {
-    font-size: 11.2rem;
+    font-size: 112px;
     font-weight: 700;
     margin:0;
 }
@@ -618,14 +550,14 @@ input#phone:disabled{
 .comments-header {
     color: #4b4b4b;
     font-family:NarkisTamMFW, serif;
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 5.9rem;
-    padding-bottom: 3.7rem;
+    padding-top: 59px;
+    padding-bottom: 37px;
 }
 
 .focus-text {
@@ -633,14 +565,14 @@ input#phone:disabled{
 }
 
 .comments-header div {
-    padding-right: 1rem;
+    padding-right: 10px;
 }
 
 /******************************CONTENT**************************/
 ul.comments-content{
     display: flex;
     flex-wrap:wrap;
-    padding: 1.2rem 0 0 0;
+    padding: 12px 0 0 0;
     list-style:none;
     margin:0 auto;
 }
@@ -649,8 +581,8 @@ ul.comments-content li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 66.8rem;
-    padding: 0 7.2rem 0 0;
+    max-width: 668px;
+    padding: 0 72px 0 0;
     margin: 0 auto;
     position: relative;
 }
@@ -659,9 +591,9 @@ ul.comments-content li {
     position:relative;
     display: flex;
     flex-direction: row;
-    flex: 1 1 40rem ;
+    flex: 1 1 400px ;
     justify-content: flex-start;
-    padding: 7.2rem 0.7rem 7.6rem 0;
+    padding: 72px 0 76px 0;
 }
 
 ul.comments-content li:after {
@@ -670,7 +602,7 @@ ul.comments-content li:after {
     position: absolute;
     bottom: 0;
     left: 7%;
-    height: 0.15rem;
+    height: 1.5px;
     width: 97%;
 }
 
@@ -683,42 +615,44 @@ ul.comments-content li:last-child {
 }
 
 .user-photo {
-    background: url(../img/avatar.png);
-    border-radius: 10rem;
-    background-size: 39rem;
-    width: 23.7rem;
-    height: 14.8rem;
-    background-position-x: 23.2rem;
-    background-position-y: 26.3rem;
-    padding-left: 0.2rem;
+    background: url(../img/avatar.png) no-repeat center;
+    border-radius: 100px;
+    width: 237px;
+    height: 148px;
+    background-position-x: -154px;
+    background-position-y: -45px;
+    padding-left: 2px;
 }
 
+.user-photo-padder {
+    padding:0 4px;
+}
 .comment-text-wrapper {
     width: 87%;
     color: #053663;
     font-family: NarkisTamMFW, serif;
-    font-size: 2.6rem;
+    font-size: 26px;
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 3.1rem;
-    padding-left: 7.4rem;
+    line-height: 31px;
+    padding-left: 74px;
 }
 .author {
     font-weight:600;
     font-family: NarkisTamMFW, serif;
-    font-size: 2.6rem;
+    font-size: 26px;
 }
 
 .brackets {
-    width: 2.3rem;
-    height: 2.3rem;
-    padding: 6.4rem 2.1rem 0 2.0rem;
+    width: 23px;
+    height: 23px;
+    padding: 64px 21px 0 20px;
 }
 
 .comment-footer {
     float: left;
     padding-left: 22%;
-    line-height: 2.3rem;
+    line-height: 23px;
 }
 
 .comment-footer-expanded {
@@ -726,7 +660,7 @@ ul.comments-content li:last-child {
 }
 
 .comment-footer-separator {
-    padding-left: 0.3rem;
+    padding-left: 3px;
 }
 
 .comment:after{
@@ -741,28 +675,28 @@ ul.comments-content li:last-child {
     width: 16%;
     color: #053663;
     font-family: NarkisTamMFW, serif;
-    font-size: 2.6rem;
+    font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
     cursor:pointer;
     display:none;
-    padding-left:2rem;
+    padding-left:20px;
     background:url(../img/close.png) no-repeat right ;
-    background-position-x: 0.8rem;
-    background-position-y: 1.5rem;
+    background-position-x: 8px;
+    background-position-y: 15px;
 }
 
 .closed {
     top: 83.5%;
     right: 34.7%;
     background:url(../img/open.png) no-repeat right;
-    background-position-x: 0.6rem;
-    background-position-y: 1.4rem;
+    background-position-x: 6px;
+    background-position-y: 14px;
 }
 
 .expiration-block {
     background:#001722;
-    padding: 3.2rem 0 3.6rem 0;
+    padding: 32px 0 36px 0;
 }
 .expiration-wrapper {
     display:flex;
@@ -770,7 +704,7 @@ ul.comments-content li:last-child {
     text-align:center;
     color: #ffffff;
     font-family: NarkisTamMFW, serif;
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -782,22 +716,22 @@ ul.comments-content li:last-child {
 
 #call {
     background:url(../img/call_icon.png) no-repeat right #033766;
-    background-position-x: 54.4rem;
-    background-position-y: 4rem;
+    background-position-x: 544px;
+    background-position-y: 40px;
     display:flex;
     justify-content:center;
-    padding:2.6rem 1.2rem 3.7rem 0;
+    padding:26px 12px 37px 0;
     cursor:pointer;
 }
 
 #call span {
     color: #ffffff;
     font-family: NarkisTamMFW, serif;
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     background: url(../img/call_icon.png) no-repeat right #033766;
-    background-position-x: 42.5rem;
-    background-position-y: 1.4rem;
-    padding: 1rem 6rem;
+    background-position-x: 425px;
+    background-position-y: 14px;
+    padding: 10px 60px;
 }
