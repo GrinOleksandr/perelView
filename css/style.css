@@ -2,42 +2,42 @@ html {
     font-size:10px;
 }
 
-@media screen and (max-width: 1100px) {
-    html {
-        font-size: 14px;
-    }
-}
+/*@media screen and (max-width: 1100px) {*/
+    /*html {*/
+        /*font-size: 14px;*/
+    /*}*/
+/*}*/
 
 
-@media screen and (max-width: 900px) {
-    html {
-        font-size: 12px;
-    }
-}
+/*@media screen and (max-width: 900px) {*/
+    /*html {*/
+        /*font-size: 12px;*/
+    /*}*/
+/*}*/
 
-@media screen and (max-width: 700px) {
-    html {
-        font-size: 9px;
-    }
-}
+/*@media screen and (max-width: 700px) {*/
+    /*html {*/
+        /*font-size: 9px;*/
+    /*}*/
+/*}*/
 
-@media screen and (max-width: 550px) {
-    html {
-        font-size: 7px;
-    }
-}
+/*@media screen and (max-width: 550px) {*/
+    /*html {*/
+        /*font-size: 7px;*/
+    /*}*/
+/*}*/
 
-@media screen and (max-width: 400px) {
-    html {
-        font-size: 5px;
-    }
-}
+/*@media screen and (max-width: 400px) {*/
+    /*html {*/
+        /*font-size: 5px;*/
+    /*}*/
+/*}*/
 
-@media screen and (max-width: 280px) {
-    html {
-        font-size: 3px;
-    }
-}
+/*@media screen and (max-width: 280px) {*/
+    /*html {*/
+        /*font-size: 3px;*/
+    /*}*/
+/*}*/
 
 
 
@@ -125,17 +125,28 @@ body {
     height:100%;
 }
 
-.slider-background-left {
-    height: 88%;
-    position:absolute;
+/*.slider-background-left {*/
+    /*height: 88%;*/
+    /*position:absolute;*/
+    /*z-index:5;*/
+    /*left:0;*/
+/*}*/
+/*.slider-background-right {*/
+    /*height: 88%;*/
+    /*position:absolute;*/
+    /*z-index:5;*/
+/*}*/
+
+.slider-next-button {
     z-index:5;
-    left:0;
 }
-.slider-background-right {
-    height: 88%;
-    position:absolute;
+
+.slider-prev-button {
     z-index:5;
 }
+
+
+
 
 .slider-item {
     text-align: center;
@@ -185,8 +196,8 @@ button.slick-next, button.slick-next:hover, button.slick-next:active, button.sli
     width: 2.5rem;
     height: 5.2rem;
     z-index: 6;
-    background-image: url(../img/next_button.png);
-    background-size: 2.5rem;
+    background-image: url(../img/next_button.png), url(../img/slider_right_background.png);
+    background-size: 2.5rem 100%;
 }
 
 button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.slick-prev:focus {
@@ -196,8 +207,8 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     z-index: 6;
     width: 2.4rem;
     height: 5.2rem;
-    background-image: url("../img/prev_button.png");
-    background-size: 2.5rem;
+    background-image: url("../img/prev_button.png"), url(../img/slider_right_background.png);
+    background-size: 2.5rem 100%;;
     background-position-x: right;
 }
 
