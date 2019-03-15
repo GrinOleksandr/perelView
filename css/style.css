@@ -484,6 +484,9 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     height: 6.8rem;
     direction: ltr;
     border: none;
+    font-size: 6rem;
+    color: #4b4b4b;
+
 }
 
 .fields-wrapper select{
@@ -554,20 +557,30 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 }
 
 input#country-code {
-    width: 10.1rem;
+    width: 12.9rem;
     height: 7rem;
     padding: 0;
     position: absolute;
     top: 0;
-    right: 44rem;
+    right: 41.4rem;
     color: #4b4b4b;
-    font-family: NarkisTamMFW, serif;
     font-size: 6rem;
     font-weight: 300;
     text-transform: uppercase;
     text-align:center;
-    -moz-appearance: textfield;
+}
 
+.separator {
+    width: 1.7rem;
+    height: 0.3rem;
+    background: #4b4b4b;
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: absolute;
+    top: 3.4rem;
+    left: 11.6rem;
+    z-index: 1;
 }
 
 input#country-code::-webkit-inner-spin-button, input#country-code::-webkit-outer-spin-button {
@@ -576,37 +589,15 @@ input#country-code::-webkit-inner-spin-button, input#country-code::-webkit-outer
     margin: 0;
 }
 
-
-input.separator {
-    height: 7rem;
-    width: 3rem;
-    color: #4b4b4b;
-    font-family: NarkisTamMFW, serif;
-    font-size: 4.4rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: center;
-    padding:0;
-}
-
-input.separator:disabled {
-    background-color: white;
-    color: white;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 41.1rem;
-}
-
 input#phone{
     height: 7rem;
-    width: 41.2rem;
+    width: 41.4rem;
     padding: 0;
     position: absolute;
     top: 0;
     right: 0;
     color: #4b4b4b;
-    font-family: NarkisTamMFW, serif;
+    /*font-family: NarkisTamMFW, serif;*/
     font-size: 6rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -681,7 +672,6 @@ input#phone:disabled{
     padding: 0;
     border: none;
 }
-
 
 /*************Contact form submitted block************************/
 
