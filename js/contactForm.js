@@ -39,7 +39,7 @@ Phone.addEventListener('keypress', validateCountryCode);
 Phone.addEventListener('keypress', validatePhone);
 
 const CountryCode = document.getElementById("country-code");
-CountryCode.addEventListener('keypress', validateCountryCode);
+CountryCode.addEventListener('keyup', validateCountryCode);
 CountryCode.addEventListener('focusout', function(){
     if(validateCountryCode()){
         Phone.focus();
@@ -50,9 +50,13 @@ function validateCountryCode() {
     let code = CountryCode.value;
     let sample = /^(02|03|04|06|08|09|072|074|076|077|078|079|050|051|052|053|054|055|056|058|059)$/;
     let alert = document.getElementById("alert-phone");
-     if (code && code.match(sample)) {
+    if (code && code.match(sample)) {
         Phone.disabled = false;
+        Phone.focus();
         alert.style.display = "none";
+        if (Phone) {
+            Phone.focus();
+        }
         return true;
     } else {
         // Phone.value = "";
@@ -102,7 +106,7 @@ function submit(ev) {
         console.log("***********FORM SUBMITTED***********");
         console.log(`Full Name: ${Form.elements['fullName'].value}`);
         console.log(`Email: ${Form.elements['email'].value}`);
-        console.log(`Phone: (${Form.elements['countryCode'].value})${Form.elements['phone'].value}`);
+        console.log(`Phone: ${Form.elements['countryCode'].value}${Form.elements['phone'].value}`);
         console.log(`APARTMENT TYPE: ${Form.elements['apartmentType'].value}`);
         console.log(`SMS AGREEMENT: ${AgreementCheckbox.checked}`);
         console.log("************************************");

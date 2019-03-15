@@ -88,6 +88,7 @@ header {
 }
 
 .slider-background-left {
+    pointer-events: none;
     height: 88%;
     position:absolute;
     z-index:5;
@@ -228,7 +229,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 }
 
 .overlay {
-    height:100vh;
+    height: 100%;
     width:100%;
     background: #10151b;
     position:fixed;
@@ -274,7 +275,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 /*HEADER*/
 .contact-form-header{
     color: #ffffff;
-    background-color: #ff0f03;
+    background: #ff0f03;
     display: flex;
     align-items: end;
 }
@@ -319,7 +320,6 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 
 .contact-form{
     background: #ff0f03;
-    padding-bottom: 5.2rem;
 }
 
 #contact-form{
@@ -361,6 +361,8 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     border: none;
     font-size: 4rem;
     color: #4b4b4b;
+    padding-right:1rem;
+    padding-left:1rem;
 }
 
 .fields-wrapper select{
@@ -430,6 +432,9 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     outline:none;
     margin:0;
 }
+input#full-name{
+    direction: rtl;
+}
 
 input#country-code {
     width: 12.9rem;
@@ -466,7 +471,7 @@ input#country-code::-webkit-inner-spin-button, input#country-code::-webkit-outer
 
 input#phone{
     height: 7rem;
-    width: 41.4rem;
+    width: 41.6rem;
     padding: 0;
     position: absolute;
     top: 0;
@@ -486,6 +491,8 @@ input#phone:disabled{
 
 input#email {
     color: #4b4b4b;
+    width: 96%;
+    padding-left: 1rem;
 }
 
 /**************CONTACT FORM FOOTER************************/
@@ -495,6 +502,7 @@ input#email {
     max-width: 54rem;
     margin: 0 auto;
     overflow:hidden;
+    padding-bottom: 5.2rem
 }
 
 .required-fields {
@@ -525,7 +533,7 @@ input#email {
     font-weight: 600;
 }
 
-.agreement-wrapper div {
+.agreement-wrapper span.agreement {
     width:100%;
     padding-right: 4.8rem;
 }
@@ -787,7 +795,6 @@ ul.comments-content li:last-child:after {
     }
 
     .contact-form-header {
-        background-color: #f50e01;
         display: block;
     }
 
