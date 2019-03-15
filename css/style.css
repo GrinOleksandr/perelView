@@ -327,6 +327,9 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     margin: 0 0.4rem;
     padding-left: 0.2rem;
 }
+..slick-dots li button{
+    padding:0.5rem;
+}
 
 .slick-dots li button:before{
     width: 1.7rem;
@@ -498,6 +501,7 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     font-weight: 500;
     text-transform: uppercase;
     background: url(../img/select_arrow.png) no-repeat right #fff;
+    background-size: 5%;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-position-x: 3.1rem;
@@ -825,7 +829,7 @@ ul.comments-content li:last-child {
 }
 
 .ellipsis {
-    position:absolute;
+    position: absolute;
     top: 86.5%;
     right: 34.7%;
     width: 16%;
@@ -834,20 +838,22 @@ ul.comments-content li:last-child {
     font-size: 2.6rem;
     font-weight: 700;
     text-transform: uppercase;
-    cursor:pointer;
-    display:none;
-    padding-left:2rem;
-    background:url(../img/close.png) no-repeat right ;
+    cursor: pointer;
+    display: none;
+    padding-left: 2rem;
+    background: url(../img/close.png) no-repeat right;
     background-position-x: 0.8rem;
-    background-position-y: 1.5rem;
+    background-position-y: 1.4rem;
+    background-size: 14%;
 }
 
 .closed {
     top: 83.5%;
     right: 34.7%;
-    background:url(../img/open.png) no-repeat right;
-    background-position-x: 0.6rem;
+    background: url(../img/open.png) no-repeat right;
+    background-position-x: 0.8rem;
     background-position-y: 1.4rem;
+    background-size: 16%;
 }
 
 .expiration-block {
