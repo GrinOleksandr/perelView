@@ -4,8 +4,8 @@ truncateAll(Comments);
 
 function truncateMe(target) {
     let text = target.innerText;
-    if (text.length > 120) {
-        let shortText = text.substr(0, 120);
+    if (text.length > 121) {
+        let shortText = text.substr(0, 121);
         target.innerText = shortText;
         target.parentElement.parentElement.style.setProperty("--display", "inline");
         let ellipsis = target.parentElement.parentElement.getElementsByClassName("ellipsis")[0];
