@@ -12,6 +12,12 @@ function onClick(ev) {
         ev.target.classList.contains("slider-image")) {
         let modal = document.getElementsByClassName('modal')[0];
         modal.style.display = "block";
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            event: 'openModal',
+            eventAction: "openModal",
+            eventLabel: "openModal",
+        });
     }
 }
 

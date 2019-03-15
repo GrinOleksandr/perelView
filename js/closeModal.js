@@ -7,4 +7,11 @@ overlay.addEventListener('click', close);
 function close (){
     let modal = document.getElementsByClassName('modal')[0];
     modal.style.display = 'none';
+
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        event: 'closeModal',
+        eventAction: "closeModal",
+        eventLabel: "closeModal",
+    });
 }

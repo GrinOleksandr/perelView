@@ -15,6 +15,12 @@ function truncateMe(target) {
         ellipsis.classList.add("closed");
         ellipsis.parentElement.getElementsByClassName("comment-footer")[0].classList.add("comment-footer-expanded");
         ellipsis.addEventListener("click", function (ev) {
+            window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                event: 'ellipsis',
+                eventAction: "ellipsis",
+                eventLabel: "ellipsis",
+            });
             return toggleText(ev.target, text, shortText);
         });
     }

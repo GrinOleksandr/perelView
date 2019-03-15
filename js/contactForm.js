@@ -97,7 +97,7 @@ const AgreementCheckbox = document.getElementById("agreement");
 
 function submit(ev) {
     ev.preventDefault();
-        if (validateFullName() && validatePhone() && validateEmail() && validateApartment()) {
+    if (validateFullName() && validatePhone() && validateEmail() && validateApartment()) {
         alert("FORM IS SENT");
         console.log("***********FORM SUBMITTED***********");
         console.log(`Full Name: ${Form.elements['fullName'].value}`);
@@ -107,6 +107,19 @@ function submit(ev) {
         console.log(`SMS AGREEMENT: ${AgreementCheckbox.checked}`);
         console.log("************************************");
         document.getElementById("form-submitted").style.display = "flex";
-    }
-    else console.log("***********DATA VALIDATION FAILED!***********");
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            event: "FormSubmitSuccess",
+            eventAction: "FormSubmit",
+            eventLabel: "FormSubmit",
+            data: {
+                name: Form.elements['fullName'].value,
+                phone: `${Form.elements['countryCode'].value}${Form.elements['phone'].value}`,
+                email: Form.elements['email'].value,
+                apartmentType: Form.elements['apartmentType'].value,
+                isChecked: AgreementCheckbox.checked
+            }
+        })
+    } else console.log("***********DATA VALIDATION FAILED!***********");
 }
+
