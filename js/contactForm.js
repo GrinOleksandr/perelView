@@ -96,7 +96,7 @@ const AgreementCheckbox = document.getElementById("agreement");
 
 function submit(ev) {
     ev.preventDefault();
-        if (validateFullName && validatePhone && validateEmail && validateApartment()) {
+        if (validateFullName() && validatePhone() && validateEmail() && validateApartment()) {
         alert("FORM IS SENT");
         console.log("***********FORM SUBMITTED***********");
         console.log(`Full Name: ${Form.elements['fullName'].value}`);
