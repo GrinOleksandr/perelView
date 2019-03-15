@@ -16,7 +16,7 @@ body {
 
 .header {
     position:relative;
-
+    max-height: 9.1rem;
     z-index:20;
     display: flex;
     flex-direction: row;
