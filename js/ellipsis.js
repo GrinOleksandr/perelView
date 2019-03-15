@@ -1,3 +1,5 @@
+//********************Click on "Ellipsis" handler********************
+
 const Comments = document.getElementsByClassName("comment-text");
 
 truncateAll(Comments);
@@ -17,6 +19,7 @@ function truncateMe(target) {
         });
     }
 }
+
 function truncateAll(targets) {
     for (let i = 0; i < targets.length; i++) {
         truncateMe(targets[i]);

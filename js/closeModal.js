@@ -1,3 +1,4 @@
+// ********************Handles the click on slider modal window********************
 let closeBtn = document.getElementsByClassName("close-modal-image")[0];
 closeBtn.addEventListener('click', close);
 

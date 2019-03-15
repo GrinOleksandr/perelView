@@ -1,3 +1,4 @@
+//********************Contact form validator and handler********************
 //Validate FullName
 const FullNameInputField = document.getElementById("full-name");
 FullNameInputField.addEventListener('keypress', validateFullName);
