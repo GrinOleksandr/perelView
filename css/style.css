@@ -14,7 +14,7 @@ main {
 
 /*************************************HEADER*************************************/
 
-.header {
+header {
     position:sticky;
     top:0;
     max-height: 9.1rem;
@@ -186,7 +186,7 @@ main {
 img.slider-image{
     display: block;
     width: 100%;
-    max-height: 47.4rem;
+    max-height: 54.4rem;
 }
 
 .slider-item-description {
@@ -586,6 +586,10 @@ input#phone:disabled{
     padding:0;
 }
 
+input#email {
+    color: #4b4b4b;
+}
+
 /**************CONTACT FORM FOOTER************************/
 .contact-form-footer {
     display: flex;
@@ -882,18 +886,13 @@ ul.comments-content li:last-child {
     html {
         font-size: 1.36vw;
     }
-
-    /*.header {*/
-        /*position:sticky;*/
-        /*top:0;*/
-    /*}*/
     .contact-form img {
         padding-right: 0;
         padding-top: 0;
     }
 
     .contact-form-header-content-wrapper {
-        flex-direction:row;
+        flex-direction: row;
     }
 
     .contact-form-header {
@@ -907,8 +906,12 @@ ul.comments-content li:last-child {
         flex-direction: column;
         flex-wrap: unset;
         justify-content: unset;
-
     }
+
+    img.slider-image {
+        max-height: 47.4rem;
+    }
+}
 
 
 /*@media screen and (max-width: 900px) {*/
