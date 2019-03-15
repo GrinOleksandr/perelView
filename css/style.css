@@ -353,6 +353,10 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     top: 10.7rem;
 }
 
+.fields-wrapper input:focus, .fields-wrapper select:focus{
+    outline: none;
+}
+
 .fields-wrapper input, .fields-wrapper select{
     max-width: 54rem;
     width: 100%;
@@ -364,8 +368,14 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     padding-right:1rem;
     padding-left:1rem;
 }
-
-.fields-wrapper select{
+/*.fields-wrapper input, select{*/
+    /*width:100%;*/
+    /*-ms-box-sizing:content-box;*/
+    /*-moz-box-sizing:content-box;*/
+    /*-webkit-box-sizing:content-box;*/
+    /*box-sizing:content-box;*/
+/*}*/
+ul.fields-wrapper li select{
     padding: 0.5rem 2.1rem 0 0;
     height: 6.9rem;
     color: #4b4b4b;
@@ -380,7 +390,15 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     background-position-x: 3.1rem;
     background-position-y: 3.0rem;
     direction: rtl;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+ul.fields-wrapper li select option{
+    width:100px;
+}
+
+
 
 .fields-wrapper select::-ms-expand{
     display:none;
