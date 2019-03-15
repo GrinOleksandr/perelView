@@ -878,9 +878,8 @@ ul.comments-content li:last-child {
 }
 
 #call {
-    background:url(../img/call_icon.png) no-repeat right #033766;
-    background-position-x: 54.4rem;
-    background-position-y: 4rem;
+    background:#033766;
+
     display:flex;
     justify-content:center;
     padding:2.6rem 1.2rem 3.7rem 0;
@@ -896,5 +895,6 @@ ul.comments-content li:last-child {
     background: url(../img/call_icon.png) no-repeat right #033766;
     background-position-x: 42.5rem;
     background-position-y: 1.4rem;
+    background-size: 5%;
     padding: 1rem 6rem;
 }
