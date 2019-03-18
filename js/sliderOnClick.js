@@ -2,6 +2,7 @@
 let slide = document.getElementsByClassName("slider-image-wrapper")[0];
 slide.addEventListener("click", onClick);
 
+
 function onClick(ev) {
     let bgLeft = document.getElementsByClassName("slider-background-left")[0];
     let bgRight = document.getElementsByClassName("slider-background-right")[0];
@@ -17,6 +18,7 @@ function onClick(ev) {
             event: 'openModal',
             eventAction: "openModal",
             eventLabel: "openModal",
+            src: slide.getElementsByClassName('slick-current')[0].querySelector('img').src
         });
     }
 }
