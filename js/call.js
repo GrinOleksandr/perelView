@@ -4,12 +4,11 @@ const CallBtn = document.getElementById("call");
 CallBtn.addEventListener("click", call);
 
 function call() {
-    alert("***CALL INITIATED***");
     window.dataLayer = window.dataLayer || [];
     dataLayer.push({
-        event: 'call',
-        eventAction: "Call",
-        eventLabel: "Call",
-        number: this.querySelector("a").href
+        event: 'Clicked on Call Now',
+        eventCategory: 'Leads',
+        eventAction: 'Clicked_To_Call',
+        eventLabel: CallBtn.querySelector("a").href.slice(4)
     })
 }
