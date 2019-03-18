@@ -772,7 +772,7 @@ ul.comments-content li:last-child:after {
     cursor:pointer;
 }
 
-#call span {
+#call a {
     color: #ffffff;
     font-family: NarkisTamMFW, serif;
     font-size: 3rem;
@@ -783,6 +783,12 @@ ul.comments-content li:last-child:after {
     background-position-y: 1.4rem;
     background-size: 5%;
     padding: 1rem 6rem;
+}
+
+#call a , #call a:visited , #call a:active  {
+    text-decoration: none;
+    color:#ffffff;
+
 }
 
 /*normal size*/
