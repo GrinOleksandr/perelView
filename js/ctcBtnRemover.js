@@ -12,11 +12,10 @@ function checkTime() {
         .then((response) =>
             response.json()
         ).then((data) =>{
-            console.log("OKK!K!K");
+
         console.log(data);
     })
         .catch((err) => {
             console.log(err);
         })
-
 }
