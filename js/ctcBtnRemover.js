@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", checkTime);
 
 function checkTime() {
 
-    fetch('http://perelview.herokuapp.com/time', {
+    fetch('http://perelview.herokuapp.com/isclosed', {
         method: 'GET',
         headers:{
             'Access-Control-Allow-Origin': "*"
