@@ -99,6 +99,7 @@ header {
     height: 88%;
     position:absolute;
     z-index:5;
+    pointer-events: none;
 }
 
 .slider-item {
