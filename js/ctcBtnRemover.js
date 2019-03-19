@@ -5,15 +5,16 @@ function checkTime() {
 
     fetch('http://perelview.herokuapp.com/isclosed', {
         method: 'GET',
-        headers:{
+        headers: {
             'Access-Control-Allow-Origin': "*"
         }
     })
         .then((response) =>
             response.json()
-        ).then((data) =>{
-
-        console.log(data);
+        ).then((data) => {
+        if (data) {
+            document.getElementById("call").style.display = "none";
+        }
     })
         .catch((err) => {
             console.log(err);
