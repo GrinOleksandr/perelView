@@ -1,8 +1,7 @@
 // ********************Handles the time and if needed hides CTC button********************
-document.addEventListener("DOMContentLoaded", checkTime);
+let regularCheckIfIsClosed = setInterval(checkIfClosed, 600000);
 
-function checkTime() {
-
+function checkIfClosed() {
     fetch('http://perelview.herokuapp.com/isclosed', {
         method: 'GET',
         headers: {
