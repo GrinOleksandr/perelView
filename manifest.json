@@ -3,13 +3,13 @@
   "short_name": "PerelView",
   "icons": [
     {
-      "src": "/android-chrome-144x144.png",
+      "src": "/perelView/android-chrome-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     }
   ],
 
-  "start_url": "/perevView/index.html",
+  "start_url": "/perelView/index.html",
   "display": "standalone",
   "background_color": "#f4f2f2",
   "theme_color": "#f4f2f2"
