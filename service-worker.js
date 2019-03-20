@@ -71,6 +71,9 @@ self.addEventListener('install', function(e) {
             console.log('[ServiceWorker] Caching app shell');
             return cache.addAll(filesToCache);
         })
+            .catch(function(err) {
+                console.log("Service Worker Failed to Register", err);
+            })
     );
 });
 
@@ -84,6 +87,8 @@ self.addEventListener('activate', function(e) {
                     return caches.delete(key);
                 }
             }));
+        }) .catch(function(err) {
+            console.log("Service Worker Failed to Register", err);
         })
     );
 });
