@@ -3,7 +3,7 @@ let dataCacheName = 'perelviewData-v2';
 let filesToCache = [
     '/',
     '/index.html',
-    '/manifest.json',
+    '/perelView/manifest.json',
     '/css/fonts.css',
     '/css/normalize.css',
     '/css/style.css',
