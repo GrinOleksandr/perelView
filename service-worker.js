@@ -70,7 +70,7 @@ let filesToCache = [
     '/js/utmHandler.js'
 ];
 
-let weatherAPIUrlBase = 'https://perelview.herokuapp.com/';
+let weatherAPIUrlBase = 'http://perelview.herokuapp.com/';
 
 self.addEventListener('install', function(e) {
     console.log('[ServiceWorker] Install');
