@@ -1,5 +1,10 @@
 {
   "name": "PerelView",
-  "short_name": "PerelView"
+  "short_name": "PerelView",
+  "icons": [{
+    "src": "img/logo_hadera.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }]
 
 }
