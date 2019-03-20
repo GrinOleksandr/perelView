@@ -2,7 +2,7 @@
 setInterval(checkIfClosed, 60000);
 
 function checkIfClosed() {
-    fetch('http://perelview.herokuapp.com/isclosed', {
+    fetch('https://perelview.herokuapp.com/isclosed', {
         method: 'GET',
         headers: {
             'Access-Control-Allow-Origin': "*"
