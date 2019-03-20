@@ -22,6 +22,7 @@ let filesToCache = [
     '/img/attention.png',
     '/img/avatar.png',
     '/img/brackets.png',
+    'img/Background_copy.png',
     '/img/call_icon.png',
     '/img/close.png',
     '/img/divider.png',
@@ -42,14 +43,14 @@ let filesToCache = [
     '/js/lib/slick/fonts/slick.woff',
     '/js/lib/slick/ajax-loader.gif',
     '/js/lib/slick/config.rb',
-    '/js/lib/slick/ajax-loader.gif',
-    '/js/lib/slick/config.rb',
     '/js/lib/slick/slick.js',
     '/js/lib/slick/slick.min.js',
     '/js/lib/slick/slick.less',
     '/js/lib/slick/slick.scss',
     '/js/lib/slick/slick-theme.less',
     '/js/lib/slick/slick-theme.scss',
+    'js/lib/slick/slick-theme.css',
+    'js/lib/slick/slick.css',
     '/js/call.js',
     '/js/closeModal.js',
     '/js/contactForm.js',
@@ -61,7 +62,7 @@ let filesToCache = [
     '/js/utmHandler.js'
 ];
 
-let weatherAPIUrlBase = 'https://perelview.herokuapp.com/isopened';
+let weatherAPIUrlBase = 'https://perelview.herokuapp.com/';
 
 self.addEventListener('install', function(e) {
     console.log('[ServiceWorker] Install');
