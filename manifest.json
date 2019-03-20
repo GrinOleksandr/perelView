@@ -9,7 +9,7 @@
     }
   ],
 
-  "start_url": "/perelView/index.html",
+  "start_url": "/perelView/",
   "display": "standalone",
   "background_color": "#f4f2f2",
   "theme_color": "#f4f2f2"
