@@ -1,5 +1,5 @@
-let cacheName = 'perelviewPWA-v2';
-let dataCacheName = 'perelviewData-v2';
+let cacheName = 'perelviewPWA-v4';
+let dataCacheName = 'perelviewData-v4';
 let filesToCache = [
     '/',
     '/index.html',
