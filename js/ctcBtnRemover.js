@@ -1,5 +1,5 @@
 // ********************Handles the time and if needed hides CTC button********************
-let regularCheckIfIsClosed = setInterval(checkIfClosed, 600000);
+setInterval(checkIfClosed, 60000);
 
 function checkIfClosed() {
     fetch('http://perelview.herokuapp.com/isclosed', {
