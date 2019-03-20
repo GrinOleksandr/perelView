@@ -3,18 +3,10 @@ let dataCacheName = 'perelviewData-v2';
 let filesToCache = [
     '/',
     '/index.html',
-    '/manifest.json',
+    '/favicon.ico',
     '/css/fonts.css',
     '/css/normalize.css',
     '/css/style.css',
-    '/android-chrome-144x144.png',
-    '/apple-touch-icon.png',
-    '/browserconfig.xml',
-    '/favicon.ico',
-    '/favicon-16x16.png',
-    '/favicon-32x32.png',
-    '/safari-pinned-tab.svg',
-    '/mstile-150x150.png',
     '/fonts/NarkisTam-Bold_MFW/NarkisTam-Bold_MFW.eot',
     '/fonts/NarkisTam-Bold_MFW/NarkisTam-Bold_MFW.ttf',
     '/fonts/NarkisTam-Bold_MFW/NarkisTam-Bold_MFW.woff',
@@ -30,7 +22,7 @@ let filesToCache = [
     '/img/attention.png',
     '/img/avatar.png',
     '/img/brackets.png',
-    '/img/Background_copy.png',
+    'img/Background_copy.png',
     '/img/call_icon.png',
     '/img/close.png',
     '/img/divider.png',
@@ -57,8 +49,8 @@ let filesToCache = [
     '/js/lib/slick/slick.scss',
     '/js/lib/slick/slick-theme.less',
     '/js/lib/slick/slick-theme.scss',
-    '/js/lib/slick/slick-theme.css',
-    '/js/lib/slick/slick.css',
+    'js/lib/slick/slick-theme.css',
+    'js/lib/slick/slick.css',
     '/js/call.js',
     '/js/closeModal.js',
     '/js/contactForm.js',
@@ -96,24 +88,24 @@ self.addEventListener('activate', function(e) {
     );
 });
 
-// self.addEventListener('fetch', function(e) {
-//     if (e.request.url.startsWith(weatherAPIUrlBase)) {
-//         e.respondWith(
-//             fetch(e.request)
-//                 .then(function(response) {
-//                     return caches.open(dataCacheName).then(function(cache) {
-//                         cache.put(e.request.url, response.clone());
-//                         console.log('[ServiceWorker] Fetched & Cached', e.request.url);
-//                         return response;
-//                     });
-//                 })
-//         );
-//     } else {
-//         e.respondWith(
-//             caches.match(e.request).then(function(response) {
-//                 console.log('[ServiceWorker] Fetch Only', e.request.url);
-//                 return response || fetch(e.request);
-//             })
-//         );
-//     }
-// });
+self.addEventListener('fetch', function(e) {
+    if (e.request.url.startsWith(weatherAPIUrlBase)) {
+        e.respondWith(
+            fetch(e.request)
+                .then(function(response) {
+                    return caches.open(dataCacheName).then(function(cache) {
+                        cache.put(e.request.url, response.clone());
+                        console.log('[ServiceWorker] Fetched & Cached', e.request.url);
+                        return response;
+                    });
+                })
+        );
+    } else {
+        e.respondWith(
+            caches.match(e.request).then(function(response) {
+                console.log('[ServiceWorker] Fetch Only', e.request.url);
+                return response || fetch(e.request);
+            })
+        );
+    }
+});
