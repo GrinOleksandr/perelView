@@ -476,7 +476,8 @@ ul.fields-wrapper li select{
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
-    position: relative;
+    background:white;
+    position:relative;
 }
 
 .phone-inputs-wrapper input{
