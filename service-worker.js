@@ -102,28 +102,11 @@ self.addEventListener('activate', function(e) {
 });
 
 self.addEventListener('fetch', function(e) {
-    if (e.request.url.startsWith(timeServerURL)) {
-        e.respondWith(
-            fetch(e.request)
-                .then(function(response) {
-                    return caches.open(dataCacheName).then(function(cache) {
-                        cache.put(e.request.url, response.clone());
-                        console.log('[ServiceWorker] Fetched & Cached', e.request.url);
-                        return response;
-                    });
-                })
-        );
-    } else {
-        e.respondWith(
-            caches.match(e.request).then(function (r) {
-                return r || fetch(e.request).then(function (response) {
-                    return caches.open(cacheName).then(function (cache) {
-                        cache.put(e.request, response.clone());
-                        return response;
-                    });
-                });
-            })
-        );
-    }
+    console.log('[ServiceWorker] Fetch', e.request.url);
+    e.respondWith(
+        caches.match(e.request).then(function(response) {
+            return response || fetch(e.request);
+        })
+    );
 });
 
