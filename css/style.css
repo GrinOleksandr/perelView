@@ -534,6 +534,7 @@ input#phone{
 input#phone:disabled{
     background:white;
     padding:0;
+    opacity:0;
 }
 
 input#email {
