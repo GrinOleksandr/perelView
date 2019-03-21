@@ -1,7 +1,7 @@
 let cacheName = 'perelviewPWA-v4';
 let dataCacheName = 'perelviewData-v4';
 let filesToCache = [
-    '/',
+    './',
     '/index.html',
     '/favicon.ico',
     '/css/fonts.css',
