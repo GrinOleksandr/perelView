@@ -41,7 +41,7 @@ Phone.addEventListener('keypress', validatePhone);
 const CountryCode = document.getElementById("country-code");
 CountryCode.addEventListener('keyup', validateCountryCode);
 CountryCode.addEventListener('focusout', function(){
-    if(validateCountryCode()){
+    if(CountryCode.value && validateCountryCode()){
         Phone.focus();
     }
 });
