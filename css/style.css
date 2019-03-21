@@ -477,7 +477,6 @@ ul.fields-wrapper li select{
     display:-ms-flexbox;
     display:flex;
     position: relative;
-    padding-bottom: 7rem;
 }
 
 .phone-inputs-wrapper input{
@@ -495,9 +494,6 @@ input#country-code {
     width: 12.9rem;
     height: 7rem;
     padding: 0;
-    position: absolute;
-    top: 0;
-    right: 41.4rem;
     color: #4b4b4b;
     font-size: 4rem;
     font-weight: 300;
@@ -528,9 +524,6 @@ input#phone{
     height: 7rem;
     width: 41.6rem;
     padding: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
     color: #4b4b4b;
     font-size: 4rem;
     font-weight: 300;
