@@ -37,11 +37,12 @@ function validateEmail() {
 const Phone = document.getElementById("phone");
 Phone.addEventListener('keypress', validateCountryCode);
 Phone.addEventListener('keypress', validatePhone);
+Phone.addEventListener('focusout', validatePhone)
 
 const CountryCode = document.getElementById("country-code");
 CountryCode.addEventListener('keyup', validateCountryCode);
 CountryCode.addEventListener('focusout', function(){
-    if(CountryCode.value && validateCountryCode()){
+    if(CountryCode.value !== "" && validateCountryCode()){
         Phone.focus();
     }
 });
@@ -70,7 +71,7 @@ function validatePhone() {
     let phone = CountryCode.value + Phone.value;
     let sample = /^(02|03|04|06|08|09|072|074|076|077|078|079|050|051|052|053|054|055|056|058|059)((?:(?![1,0]{1}))\d{7})$/;
     let alert = document.getElementById("alert-phone");
-    if (phone && phone.match(sample)) {
+    if (Phone.value === "" || phone.match(sample)) {
         alert.style.display = "none";
         return true;
     } else {
