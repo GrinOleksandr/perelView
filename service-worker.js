@@ -80,7 +80,7 @@ self.addEventListener('install', function(e) {
             return cache.addAll(filesToCache);
         })
             .catch(function(err) {
-                console.log("Service Worker Failed to Register", err);
+                console.log("Service Worker Failed to Install", err);
             })
     );
 });
@@ -96,7 +96,7 @@ self.addEventListener('activate', function(e) {
                 }
             }));
         }) .catch(function(err) {
-            console.log("Service Worker Failed to Register", err);
+            console.log("Service Worker Failed to Activate", err);
         })
     );
 });
