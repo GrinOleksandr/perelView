@@ -72,6 +72,8 @@ let filesToCache = [
 
 let timeServerURL = 'http://perelview.herokuapp.com/';
 
+let weatherAPIUrlBase = 'https://publicdata-weather.firebaseio.com/';
+
 self.addEventListener('install', function(e) {
     console.log('[ServiceWorker] Install');
     e.waitUntil(
@@ -79,9 +81,6 @@ self.addEventListener('install', function(e) {
             console.log('[ServiceWorker] Caching app shell');
             return cache.addAll(filesToCache);
         })
-            .catch(function(err) {
-                console.log("Service Worker Failed to Install", err);
-            })
     );
 });
 
@@ -95,18 +94,28 @@ self.addEventListener('activate', function(e) {
                     return caches.delete(key);
                 }
             }));
-        }) .catch(function(err) {
-            console.log("Service Worker Failed to Activate", err);
         })
     );
 });
 
 self.addEventListener('fetch', function(e) {
-    console.log('[ServiceWorker] Fetch', e.request.url);
-    e.respondWith(
-        caches.match(e.request).then(function(response) {
-            return response || fetch(e.request);
-        })
-    );
+    if (e.request.url.startsWith(weatherAPIUrlBase)) {
+        e.respondWith(
+            fetch(e.request)
+                .then(function(response) {
+                    return caches.open(dataCacheName).then(function(cache) {
+                        cache.put(e.request.url, response.clone());
+                        console.log('[ServiceWorker] Fetched & Cached', e.request.url);
+                        return response;
+                    });
+                })
+        );
+    } else {
+        e.respondWith(
+            caches.match(e.request).then(function(response) {
+                console.log('[ServiceWorker] Fetch Only', e.request.url);
+                return response || fetch(e.request);
+            })
+        );
+    }
 });
-
