@@ -7,6 +7,14 @@ let filesToCache = [
     '/css/fonts.css',
     '/css/normalize.css',
     '/css/style.css',
+    '/android-chrome-144x144.png',
+    '/apple-touch-icon.png',
+    '/browserconfig.xml',
+    '/favicon-16x16.png',
+    '/favicon-32x32.png',
+    '/manifest.json',
+    '/mstile-150x150.png',
+    '/safari-pinned-tab.svg',
     '/fonts/NarkisTam-Bold_MFW/NarkisTam-Bold_MFW.eot',
     '/fonts/NarkisTam-Bold_MFW/NarkisTam-Bold_MFW.ttf',
     '/fonts/NarkisTam-Bold_MFW/NarkisTam-Bold_MFW.woff',
@@ -62,7 +70,7 @@ let filesToCache = [
     '/js/utmHandler.js'
 ];
 
-let weatherAPIUrlBase = 'http://perelview.herokuapp.com/';
+let timeServerURL = 'http://perelview.herokuapp.com/';
 
 self.addEventListener('install', function(e) {
     console.log('[ServiceWorker] Install');
@@ -94,7 +102,7 @@ self.addEventListener('activate', function(e) {
 });
 
 self.addEventListener('fetch', function(e) {
-    if (e.request.url.startsWith(weatherAPIUrlBase)) {
+    if (e.request.url.startsWith(timeServerURL)) {
         e.respondWith(
             fetch(e.request)
                 .then(function(response) {
