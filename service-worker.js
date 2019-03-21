@@ -70,27 +70,25 @@ let filesToCache = [
     './js/utmHandler.js'
 ];
 
-let timeServerURL = 'http://perelview.herokuapp.com/';
 
-let weatherAPIUrlBase = 'https://publicdata-weather.firebaseio.com/';
 
 self.addEventListener('install', function(e) {
-    console.log('[ServiceWorker] Install');
+    // console.log('[ServiceWorker] Install');
     e.waitUntil(
         caches.open(cacheName).then(function(cache) {
-            console.log('[ServiceWorker] Caching app shell');
+            // console.log('[ServiceWorker] Caching app shell');
             return cache.addAll(filesToCache);
         }).catch(function(err){console.log(err)})
     );
 });
 
 self.addEventListener('activate', function(e) {
-    console.log('[ServiceWorker] Activate');
+    // console.log('[ServiceWorker] Activate');
     e.waitUntil(
         caches.keys().then(function(keyList) {
             return Promise.all(keyList.map(function(key) {
                 if (key !== cacheName && key !== dataCacheName) {
-                    console.log('[ServiceWorker] Removing old cache', key);
+                    // console.log('[ServiceWorker] Removing old cache', key);
                     return caches.delete(key);
                 }
             }));
@@ -99,7 +97,7 @@ self.addEventListener('activate', function(e) {
 });
 
 self.addEventListener('fetch', function(e) {
-    console.log('[ServiceWorker] Fetch', e.request.url);
+    // console.log('[ServiceWorker] Fetch', e.request.url);
     e.respondWith(
         caches.match(e.request).then(function(response) {
             return response || fetch(e.request);
