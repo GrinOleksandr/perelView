@@ -8,18 +8,27 @@ body {
 
 main {
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     direction: rtl;
 }
 
 /*************************************HEADER*************************************/
 header {
+    position:-webkit-sticky;
     position:sticky;
     top:0;
     max-height: 9.1rem;
     z-index:20;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #f4f2f2;
     border-bottom: 0.18rem solid #eaeaea;
@@ -77,7 +86,12 @@ header {
 .slider {
     width:100%;
     direction: ltr;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -213,14 +227,22 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 
 .pagination-wrapper {
     width:100%;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
     justify-content:center;
 }
 
 .pagination {
     padding: 1.1rem 0 3.1rem 0.5rem;
     direction:ltr;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
     justify-content:center;
 }
 
@@ -238,7 +260,11 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
     top:0;
     left:0;
     z-index:99;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -269,8 +295,12 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .contact-form {
     direction:rtl;
     position:relative;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -278,7 +308,11 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 .contact-form-header{
     color: #ffffff;
     background: #ff0f03;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -291,8 +325,15 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 
 .contact-form-header-content-wrapper {
     padding: 1.5rem 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
 }
@@ -331,7 +372,12 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.sli
 
 .global-contact-wrapper {
     position:relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -386,7 +432,6 @@ ul.fields-wrapper li select{
     background-position-y: 3.0rem;
     direction: rtl;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -428,6 +473,8 @@ ul.fields-wrapper li select{
 }
 
 .phone-inputs-wrapper {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     position: relative;
     padding-bottom: 7rem;
@@ -504,7 +551,12 @@ input#email {
 
 /**************CONTACT FORM FOOTER************************/
 .contact-form-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     max-width: 54rem;
     margin: 0 auto;
@@ -519,6 +571,7 @@ input#email {
     font-weight: 400;
     text-transform: uppercase;
     padding: 0;
+    -ms-flex-item-align: end;
     align-self: flex-end;
 }
 
@@ -528,7 +581,12 @@ input#email {
     font-size: 2.6rem;
     font-weight: 400;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     padding-top: 3.7rem;
     padding-bottom: 3.0rem;
@@ -572,7 +630,12 @@ input#email {
 /*************Contact form submitted block************************/
 
 #form-submitted {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     /*padding: 28.6rem 0 37.7rem 0;*/
     width: 100%;
@@ -610,8 +673,15 @@ input#email {
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-top: 5.9rem;
     padding-bottom: 3.7rem;
@@ -627,7 +697,10 @@ input#email {
 
 /******************************CONTENT**************************/
 ul.comments-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap:wrap;
     flex-wrap:wrap;
     padding: 1.2rem 0 0 0;
     list-style:none;
@@ -635,8 +708,14 @@ ul.comments-content{
 }
 
 ul.comments-content li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 66.8rem;
     padding: 0 7.2rem 0 0;
@@ -646,9 +725,18 @@ ul.comments-content li {
 
 .comment-wrapper {
     position:relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem ;
     flex: 1 1 40rem ;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     padding: 7.2rem 0.7rem 7.6rem 0;
 }
@@ -752,7 +840,12 @@ ul.comments-content li:last-child:after {
     padding: 3.2rem 0 3.6rem 0;
 }
 .expiration-wrapper {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
     flex-direction:column;
     text-align:center;
     color: #ffffff;
@@ -769,7 +862,11 @@ ul.comments-content li:last-child:after {
 
 #call {
     background:#033766;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
     justify-content:center;
     padding:2.6rem 1.2rem 3.7rem 0;
     cursor:pointer;
@@ -805,6 +902,9 @@ ul.comments-content li:last-child:after {
     }
 
     .contact-form-header-content-wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
 
@@ -813,9 +913,17 @@ ul.comments-content li:last-child:after {
     }
 
     .contact-form {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-wrap: unset;
         flex-wrap: unset;
+        -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
         justify-content: unset;
     }
 
