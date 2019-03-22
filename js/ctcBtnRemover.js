@@ -1,4 +1,5 @@
 // ********************Handles the time and if needed hides CTC button********************
+checkIfClosed();
 setInterval(checkIfClosed, 60000);
 
 function checkIfClosed() {

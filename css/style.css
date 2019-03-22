@@ -931,4 +931,14 @@ ul.comments-content li:last-child:after {
     html {
         font-size: 11px;
     }
+
+    .slider-section-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-wrapper {
+       width: 800px;
+    }
 }
