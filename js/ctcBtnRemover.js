@@ -15,6 +15,7 @@ function checkIfClosed() {
         if (data) {
             document.getElementById("call").style.display = "none";
         }
+        else document.getElementById("call").style.display = "flex";
     })
         .catch((err) => {
             console.log(err);
