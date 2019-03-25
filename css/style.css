@@ -157,8 +157,8 @@ img.slider-image{
 /* Slider arrows */
 button.slick-next, button.slick-next:hover, button.slick-next:active, button.slick-next:focus {
     position: absolute;
-    top: 23.9rem;
-    right: 4.5rem;
+    top: 50%;
+    right: 7%;
     width: 2.5rem;
     height: 5.2rem;
     z-index: 6;
@@ -168,8 +168,8 @@ button.slick-next, button.slick-next:hover, button.slick-next:active, button.sli
 
 button.slick-prev, button.slick-prev:hover, button.slick-prev:active, button.slick-prev:focus {
     position: absolute;
-    top: 23.9rem;
-    left: 4.6rem;
+    top: 50%;
+    left: 7%;
     z-index: 6;
     width: 2.4rem;
     height: 5.2rem;
