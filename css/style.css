@@ -942,3 +942,21 @@ ul.comments-content li:last-child:after {
        width: 1400px;
     }
 }
+
+
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 15px;
+    }
+
+    .slider-section-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-wrapper {
+        width: 1500px;
+    }
+}
