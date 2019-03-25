@@ -959,4 +959,8 @@ ul.comments-content li:last-child:after {
     .slider-wrapper {
         width: 1500px;
     }
+
+    img.slider-image {
+        max-height: 72rem;
+    }
 }
